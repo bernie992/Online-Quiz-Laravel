@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Manage class - TeckQuiz')
+@section('title', 'Manage class')
 @section('content')
 <style>
     body {
@@ -15,7 +15,7 @@
                         aria-expanded="true">Class</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" aria-expanded="true">Quizzes</a>
+                    <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" aria-expanded="true">Exams</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="v-pills-students" data-toggle="pill" href="#students-tab" role="tab" aria-controls="v-pills-students"
@@ -50,20 +50,20 @@
                             <div class="card text-white bg-info">
                                 <div class="card-body">
                                     <p class="align-left display-1">{{ $quiz_events->count() }}</p>
-                                    <p class="lead align-left"> Quiz{{ $quiz_events->count()
+                                    <p class="lead align-left"> Exam{{ $quiz_events->count()
                                         <=1 ? '' : 'zes' }}</p>
                                 </div>
-                                <a class="card-footer text-white clearfix small z-1 text-center" href="">View quiz</a>
+                                <a class="card-footer text-white clearfix small z-1 text-center" href="">View Exam</a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-12 pb-3">
                             <div class="card text-white bg-success">
                                 <div class="card-body">
                                     <p class="align-left display-1">{{ $students->count() }}</p>
-                                    <p class="lead align-left"> Student{{ $quiz_events->count()
+                                    <p class="lead align-left"> Applicant{{ $quiz_events->count()
                                         < 1 ? '' : 's' }}</p>
                                 </div>
-                                <a class="card-footer text-white clearfix small z-1 text-center" href="">View student list</a>
+                                <a class="card-footer text-white clearfix small z-1 text-center" href="">View applicant list</a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                     </table>
                 
                     <button class="btn btn-primary" data-toggle="modal" data-target="#AddNewStudentModal" disabled>
-                        Add new student
+                        Add new applicant
                     </button>
                 </div>
                 
@@ -139,7 +139,7 @@
                             <li class="list-group-item">
                                 <button class="btn btn-danger" data-toggle="modal" data-target="#deleteClass" style="float: right">Delete this class</button>
                                 <strong>Delete this class</strong>
-                                <p>Once you delete this class, all quiz events that refers to this class will also be deleted.</p>
+                                <p>Once you delete this class, all exam events that refers to this class will also be deleted.</p>
                             </li>
                         </ul>
                     </div>
@@ -182,7 +182,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                Are you sure to reset this teacher's password?
+                Are you sure to reset this applicant's password?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -197,7 +197,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Student Profile</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Applicant Profile</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

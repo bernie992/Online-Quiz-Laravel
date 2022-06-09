@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Subjects - TeckQuiz')
+@section('title', 'Subjects')
 @section('content')
 <style>
     body {

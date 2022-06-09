@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Login to CHMSU QUIZZ</title>
+    <title>Login to Applicant Exam</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -19,11 +19,11 @@
         }
     </style>
     <header class="mt-4">
-        <img src="assets/img/bg.png" width="100px" height="auto" alt="" style="display: block; margin: auto;">
+        <img src="assets/img/new core.png" width="100px" height="auto" alt="" style="display: block; margin: auto;">
     </header>
     <div class="container-fluid">
         <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
-            <h5 class="text-center">Login to CHMSU Quiz</h5>
+            <h5 class="text-center">Login to Applicant Exam</h5>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mx-auto card">
             <div class="card-body">

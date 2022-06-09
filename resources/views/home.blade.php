@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'TeckQuiz - An Online Quiz Management System')
+@section('title', 'An Online Applicant Exam Management System')
 @section('content')
     <main>
         <style>
@@ -24,9 +24,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 text-left mr-auto">
-                        <img src="/assets/img/quiz.jpg" alt="" class="img-fluid">
+                        <img src="/assets/img/online.jpg" alt="" class="img-fluid">
                          <div><h4 class="lead text-center" style="margin-boo: -8rem; font-size: 2rem;">
-                            An Online Quiz System built for the Web.
+                         An Online Applicant Exam System built for the Web.
                         </h4></div>
                        
                     </div>
@@ -79,7 +79,7 @@
                                         <div class="invalid-feedback">
                                             {{ $errors->first('class_code') }}
                                         </div>
-                                        <small class="form-text text-muted">Ask your teacher for the code</small>
+                                        <small class="form-text text-muted">Ask the HR for the code exam</small>
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-danger btn-block">Register</button>
@@ -98,8 +98,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12">
-                    <h3 class="text-muted">CHMSU ONLINE QUIZ</h3>
-                    <p class="text-muted">Use our free online quiz maker to assess candidates and employees or test students. Scoring and reports are automated, meaning analysis is effortless.</p>
+                    <h3 class="text-muted">ONLINE APPLICANT EXAM SYSTEM</h3>
+                    <p class="text-muted">Use our free online exam maker to assess candidates and employees or test applicant. Scoring and reports are automated, meaning analysis is effortless.</p>
                 </div>
                 <div class="col-lg-8 col-md-12">
                     <ul class="list-unstyled">

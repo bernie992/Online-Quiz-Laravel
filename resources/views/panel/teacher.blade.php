@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Quiz Dashboard - TeckQuiz')
+@section('title', 'Quiz Dashboard')
 @section('content')
 <style>
     main{
@@ -17,7 +17,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ $classes->count() == 0 ? 'disabled' : '' }}" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
-                            aria-expanded="true">Quiz Events</a>
+                            aria-expanded="true">Exam Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ $subjects->count() == 0 ? 'disabled' : '' }} " id="v-pills-profile-tab" data-toggle="pill" href="#my-classes" role="tab" aria-controls="v-pills-profile"
@@ -39,18 +39,18 @@
                                 <div class="card text-white bg-primary">
                                     <div class="card-body">
                                         <h1 class="align-left display-4">{{ $quiz_events->count() }}</h1>
-                                        <p class="lead align-left">Quizzes on queue</p>
+                                        <p class="lead align-left">Exams on queue</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View quizzes</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View exams</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-secondary">
                                     <div class="card-body">
                                         <h1 class="align-left display-4">{{ $finished_quiz_events->count() }}</h1>
-                                        <p class="lead align-left">Quizzes finished</p>
+                                        <p class="lead align-left">Exams finished</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View quizzes</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View exams</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -74,9 +74,9 @@
                         </div>
                     </div>
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="quiz-events" role="tabpanel" aria-labelledby="quiz-events">
-                        <h1 class="text-left">Quiz Events</h1>
+                        <h1 class="text-left">Exam Events</h1>
                         <div class="col-10">
-                            <h4>Current Quizzes</h4>
+                            <h4>Current Exam</h4>
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
@@ -98,7 +98,7 @@
                         </div>
                         @if(count($finished_quiz_events) >= 1)
                             <div class="col-10">
-                                <h4>Past Quizzes</h4>
+                                <h4>Past Exams</h4>
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
@@ -120,8 +120,8 @@
                                 </table>
                             </div>
                         @endif
-                        {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New quiz event</button>  --}}
-                        <a class="btn btn-primary" href="/quiz/create">New quiz event</a>
+                        {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
+                        <a class="btn btn-primary" href="/quiz/create">New exam event</a>
                     </div>
 
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="my-classes" role="tabpanel" aria-labelledby="my-classes"><!-- Manage Class -->
@@ -175,14 +175,14 @@
         <form class="modal-content form" action="/new/quiz" method="POST">
             {{ csrf_field() }}
             <div class="modal-header">
-                <h5 class="modal-title" id="ModalTitle">New Quiz Event</h5>
+                <h5 class="modal-title" id="ModalTitle">New Exam Event</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="">Quiz Name</label>
+                    <label for="">Exam Name</label>
                     <input name="quiz_name" type="text" class="form-control">
                 </div>
                 <div class="form-group">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'TeckQuiz - An Online Quiz Management System')
+@section('title', 'An Online Applicant Exam Management System')
 @section('content')
     <style>
             /* Add the below transitions to allow a smooth color change similar to lyft */
@@ -52,16 +52,16 @@
     </style>
     <div class="container-fluid app-title-container">
         <div class="jumbotron app-title" style="border-radius: 0">
-            <h1 class="text-center">TeckQuiz</h1>
-            <p class="text-center">An Online Quiz Management System</p>
+            <h1 class="text-center">Exam</h1>
+            <p class="text-center">An Online Applicant Exam Management System</p>
         </div>
     </div>
     <div class="container-fluid center-features app-feature-1">
         <h2 class="text-center"><strong>Forget the paper, just test.</strong></h2>
-        <p class="text-center">Quiz without paper. Quiz without hassle.</p>
+        <p class="text-center">Exam without paper. Exam without hassle.</p>
     </div>
     <div class="container-fluid center-features app-feature-2">
-        <h2 class="text-center"><strong>Serve quiz with ease.</strong></h2>
+        <h2 class="text-center"><strong>Serve exam with ease.</strong></h2>
         <p class="text-center">No more confusion, just do it.</p>
     </div>
     <script>

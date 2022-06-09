@@ -19,11 +19,11 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center">Quiz Report</h1>
+        <h1 class="text-center">Exam Report</h1>
         <h5 class="text-center">for {{ $results->quiz_event->quiz_event_name }}</h5>
         <hr>
         <p>
-            Student name: 
+            Applicant name: 
             <b>
                 {{ $results->user_profile->family_name }},
                 {{ $results->user_profile->given_name }}

@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 text-left mr-auto">
-                        <img src="/assets/img/quiz.jpg" alt="" class="img-fluid">
+                        <img src="/assets/img/online.jpg" alt="" class="img-fluid">
                          <div><h4 class="lead text-center" style="margin-boo: -8rem; font-size: 2rem;">
                          An Online Applicant Exam System built for the Web.
                         </h4></div>

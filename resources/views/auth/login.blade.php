@@ -19,7 +19,7 @@
         }
     </style>
     <header class="mt-4">
-        <img src="assets/img/bg.png" width="100px" height="auto" alt="" style="display: block; margin: auto;">
+        <img src="assets/img/new core.png" width="100px" height="auto" alt="" style="display: block; margin: auto;">
     </header>
     <div class="container-fluid">
         <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">

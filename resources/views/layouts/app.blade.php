@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: seagreen;">
             <a class="navbar-brand" href="/">
-                <img src="/assets/img/bg.png" width="auto" height="35px" alt="">
+                <img src="/assets/img/new core.png" width="auto" height="35px" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">

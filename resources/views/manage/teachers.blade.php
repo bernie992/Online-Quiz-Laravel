@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Teachers - TeckQuiz')
+@section('title', 'HR ')
 @section('content')
 <style>
     body {
@@ -14,7 +14,7 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Teacher's Name</th>
+                        <th>HR's Name</th>
                         <th>Username</th>
                         <th>Classes</th>
                         <th></th>
@@ -46,7 +46,7 @@
             </table>
         </div>
         <div class="col-3">
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject">Add new teacher</button>
+            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject">Add new HR</button>
         </div>
 
     </div>
@@ -56,7 +56,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Teacher</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Add HR</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="form-group">
                             <button type="submit" onclick="" class="btn btn-success btn-block">Register</button>
-                            <small class="form-text text-muted text-center">By clicking "Register", the teacher agree to our terms of service and privacy policy.</small>
+                            <small class="form-text text-muted text-center">By clicking "Register", the HR agree to our terms of service and privacy policy.</small>
                         </div>
                         <input type="hidden" name="permission" id="permission" value="1">
                     </form>
@@ -104,7 +104,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Are you sure to reset this teacher's password?
+                    Are you sure to reset this HR's password?
                     <input type="hidden" id="t_id" value="">
                 </div>
                 <div class="modal-footer">
@@ -143,13 +143,13 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Confirm deletion of teacher</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm deletion of HR</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    Are you sure you want to delete this teacher? Any classes under this teacher will also be deleted. <b>This is irreversible!</b>
+                    Are you sure you want to delete this HR? Any classes under this HR will also be deleted. <b>This is irreversible!</b>
                     <input type="hidden" id="tid_del" value="">
                 </div>
                 <div class="modal-footer">

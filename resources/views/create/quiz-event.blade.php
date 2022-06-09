@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Quiz Dashboard - TeckQuiz')
+@section('title', 'Exam Dashboard')
 @section('content')
 <style>
     body {
@@ -12,7 +12,7 @@
         {{ csrf_field() }}
         <div class="col-6">
             <div class="form-group">
-                <label for="">Quiz Name</label>
+                <label for="">Exam Name</label>
                 <input name="q_name" type="text" class="form-control" required autofocus>
             </div>
             <div class="form-group">

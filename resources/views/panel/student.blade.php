@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Quiz - TeckQuiz')
+@section('title', 'Exam')
 @section('content')
 <style>
     main{
@@ -13,11 +13,11 @@
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#pending" role="tab" aria-controls="v-pills-home"
-                            aria-expanded="true">Pending Quiz</a>
+                            aria-expanded="true">Pending Exam</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#upcoming" role="tab" aria-controls="v-pills-profile"
-                            aria-expanded="true">Upcoming Quiz</a>
+                            aria-expanded="true">Upcoming Exam</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
@@ -29,7 +29,7 @@
             <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
                 <div class="tab-content col" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="pending" role="tabpanel" aria-labelledby="quiz-events">
-                        <h3>Pending Quizzes</h3>
+                        <h3>Pending Exams</h3>
                         <div class="col container row mb-2">
                             <!-- Example of a quiz event entry -->
                             <div class="col-6 quiz-event">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="upcoming" role="tabpanel" aria-labelledby="manage-class">
-                        <h3>Upcoming Quizzes</h3>
+                        <h3>Upcoming Exams</h3>
                         <div class="col container row mb-2">
                             <!-- Example of a quiz event entry -->
                             <div class="col-6 quiz-event">
@@ -73,7 +73,7 @@
                                     <li class="list-group-item">
                                         <button class="btn btn-primary" data-toggle="modal" data-target="#joinClass" style="float: right">Join another class</button>
                                         <strong>Join another class</strong>
-                                        <p>This will allow you to join an existing class in order to take that class' quizzes.</p>
+                                        <p>This will allow you to join an existing class in order to take that class' exams.</p>
                                     </li>
                                 </ul>
                             </div>

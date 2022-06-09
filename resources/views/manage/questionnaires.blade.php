@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Manage Questionnaire - TeckQuiz')
+@section('title', 'Manage Questionnaire')
 @section('content')
 <style>
     body {
@@ -7,7 +7,7 @@
     }
 </style>
 <section class="container">
-    <h1>Manage Quiz</h1>
+    <h1>Manage Exam</h1>
     <b>
         <p>{{ $q->questionnaire_name }}</p>
     </b>

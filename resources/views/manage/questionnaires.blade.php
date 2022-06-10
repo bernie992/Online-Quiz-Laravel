@@ -10,8 +10,10 @@
     <h1>Manage Exam</h1>
     <b>
         <p>{{ $q->questionnaire_name }}</p>
+        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createQuestion" style="margin-left: 87%"><span class="fa fa-plus"></span> Add new question</button>
     </b>
     <hr>
+
     <div class="row">
         <div class="col-md-9">
             <div class="tab-content" id="v-pills-tabContent">
@@ -67,7 +69,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createQuestion">Add new question</button>
                 </div>
                 <div class="tab-pane fade " id="basic-info" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, inventore.
@@ -77,12 +78,13 @@
         <div class="col-md-3">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
                 <a class="nav-link active" id="questions-tab" data-toggle="pill" href="#questions" role="tab" aria-controls="v-pills-profile" aria-expanded="true">Questions</a>
-                {{--  <a class="nav-link" id="basic-info-tab" data-toggle="pill" href="#basic-info" role="tab" aria-controls="v-pills-home"
-                    aria-expanded="true">Basic Information</a>  --}}
+                <a class="nav-link" id="basic-info-tab" data-toggle="pill" href="#basic-info" role="tab" aria-controls="v-pills-home"
+                    aria-expanded="true">Basic Information</a>
             </div>
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
         </div>
-
-
     </div>
 
 </section>

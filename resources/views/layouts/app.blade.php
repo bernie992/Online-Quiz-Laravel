@@ -8,9 +8,11 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>@yield('title')</title>
-
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Styles -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/teckquiz.css') }}" rel="stylesheet">
@@ -20,7 +22,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: seagreen;">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: black;">
             <a class="navbar-brand" href="/">
                 <img src="/assets/img/new core.png" width="auto" height="35px" alt="">
             </a>

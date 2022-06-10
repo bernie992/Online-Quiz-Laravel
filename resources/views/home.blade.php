@@ -18,6 +18,13 @@
                 height: 400px;
                 width: 400px;
             }
+            .card{
+            padding: 20px;
+            box-shadow:
+            inset 0 -4em 4em rgba(0,0,0,0.1),
+                0 0  0 3px rgb(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.4);
+            }
         </style>
         
         <div class="jumbotron">
@@ -82,7 +89,7 @@
                                         <small class="form-text text-muted">Ask the HR for the code exam</small>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-block">Register</button>
+                                        <center><button type="submit" class="btn btn-primary btn-block col-3">Register</button></center>
                                         <small class="form-text text-muted text-center">By clicking "Register", you agree to our terms of service and privacy policy.</small>
                                     </div>
                                 </form>

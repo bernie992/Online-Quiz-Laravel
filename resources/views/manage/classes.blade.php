@@ -19,7 +19,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="v-pills-students" data-toggle="pill" href="#students-tab" role="tab" aria-controls="v-pills-students"
-                        aria-expanded="true">Students</a>
+                        aria-expanded="true">Applicant</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="v-pills-settings" data-toggle="pill" href="#settings-tab" role="tab" aria-controls="v-pills-settings"

@@ -74,7 +74,7 @@
                         <thead>
                             <tr>
                                 <th>Topic</th>
-                                <th>Subject</th>
+                                <th>Category</th>
                                 <th>Class</th>
                                 <th>Status</th>
                                 <th></th>

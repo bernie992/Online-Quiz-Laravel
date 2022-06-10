@@ -7,7 +7,7 @@
     }
 </style>
 <div class="container">
-    <h1>Subjects</h1>
+    <h1>Categories</h1>
     <div class="row">
         <div class="col-9">
 
@@ -15,7 +15,7 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Subject Code</th>
+                        <th>Category Code</th>
                         <th>Description</th>
                         <th>Classes</th>
                         <th></th>
@@ -45,7 +45,7 @@
             </table>
         </div>
         <div class="col-3">
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject">Add new subject</button>
+            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject"> <span class="fa fa-plus"></span> Add new Category</button>
         </div>
     </div>
 </div>
@@ -54,7 +54,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Subject</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -64,11 +64,11 @@
                     <input type="hidden" id="usrid" value="-1">
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="">Subject Code</label>
+                            <label for="">Category Code</label>
                             <input id="sub_code" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="">Subject Description</label>
+                            <label for="">Category Description</label>
                             <input id="sub_des" type="text" class="form-control" placeholder="">
                         </div>
                         <input type="hidden" id="sub_id">
@@ -77,7 +77,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="UpdateSubject()">Update Subject</button>
+                <button type="button" class="btn btn-primary" onclick="UpdateSubject()">Update Category</button>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Subject</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -98,11 +98,11 @@
                     <input type="hidden" id="usrid" value="-1">
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="">Subject Code</label>
+                            <label for="">Category Code</label>
                             <input id="s_code_new" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="">Subject Description</label>
+                            <label for="">Category Description</label>
                             <input id="s_desc_new" type="text" class="form-control" placeholder="">
                         </div>
                     </div>
@@ -110,7 +110,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="AddSubject()">Add Subject</button>
+                <button type="button" class="btn btn-primary" onclick="AddSubject()"> <span class="fa fa-plus"></span> Add Category</button>
             </div>
         </div>
     </div>
@@ -127,12 +127,12 @@
                 </button>
             </div>
             <div class="modal-body">
-                Are you sure you want to delete this subject? This is irreversible!
+                Are you sure you want to delete this Category? This is irreversible!
                 <input type="hidden" id="sub_id_del" value="">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" onclick="DeleteSubject()">Delete Subject</button>
+                <button type="button" class="btn btn-danger" onclick="DeleteSubject()">Delete</button>
             </div>
         </div>
     </div>

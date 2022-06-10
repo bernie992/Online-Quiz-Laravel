@@ -48,9 +48,9 @@
                                 <div class="card text-white bg-secondary">
                                     <div class="card-body">
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
-                                        <p class="lead align-left">Subjects</p>
+                                        <p class="lead align-left">Category</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects">View subjects</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects">View category</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -82,7 +82,7 @@
                                 <thead>
                                     <tr>
                                         <th>Topic</th>
-                                        <th>Subject</th>
+                                        <th>Category</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
@@ -104,7 +104,7 @@
                                     <thead>
                                         <tr>
                                             <th>Topic</th>
-                                            <th>Subject</th>
+                                            <th>Category</th>
                                             <th>Class</th>
                                             <th></th>
                                         </tr>
@@ -147,14 +147,14 @@
                             <div class="card col-12" style="max-width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        <a class="btn btn-primary" href="/subjects" style="float: right">Manage subjects</a>
-                                        <strong>Manage subjects</strong>
-                                        <p>This will allow you to manage subjects to serve as basis for the classes.</p>
+                                        <a class="btn btn-primary" href="/subjects" style="float: right">Manage Category</a>
+                                        <strong>Manage category</strong>
+                                        <p>This will allow you to manage category to serve as basis for the classes.</p>
                                     </li>
                                     <li class="list-group-item">
-                                        <a class="btn btn-primary" href="/teachers" style="float: right">Manage teachers</a>
-                                        <strong>Manage teachers</strong>
-                                        <p>This will allow you to manage teachers to use this system.</p>
+                                        <a class="btn btn-primary" href="/teachers" style="float: right">Manage HR</a>
+                                        <strong>Manage HR</strong>
+                                        <p>This will allow you to manage HR to use this system.</p>
                                     </li>
                                     <li class="list-group-item">
                                         <button class="btn btn-danger" data-toggle="modal" data-target="#changePassword" style="float: right">Change password</button>

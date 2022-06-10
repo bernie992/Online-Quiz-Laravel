@@ -7,7 +7,7 @@
     }
 </style>
 <div class="container">
-    <h2>Create Quiz Event</h2>
+    <h2>Create Exam Event</h2>
     <form action="/quiz" method="POST" class="form">
         {{ csrf_field() }}
         <div class="col-6">

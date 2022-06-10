@@ -81,7 +81,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Class Code</label>
+                                        <label for="">Exam Code</label>
                                         <input name="class_code" id="class_code" type="text" class="form-control {{ $errors->has('class_code') ? 'is-invalid' : '' }}" value="{{ old('class_code') }}">
                                         <div class="invalid-feedback">
                                             {{ $errors->first('class_code') }}

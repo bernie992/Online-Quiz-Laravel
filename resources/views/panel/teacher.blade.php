@@ -59,16 +59,16 @@
                                         <h1 class="align-left display-4" >{{ $classes->count() }}</h1>
                                         <p class="lead align-left">Classes</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View subjects</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View classes</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-success">
                                     <div class="card-body">
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
-                                        <p class="lead align-left">Subjects</p>
+                                        <p class="lead align-left">Category</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View subjects</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View category</a>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                                 <thead>
                                     <tr>
                                         <th>Topic</th>
-                                        <th>Subject</th>
+                                        <th>Category</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
@@ -103,7 +103,7 @@
                                     <thead>
                                         <tr>
                                             <th>Topic</th>
-                                            <th>Subject</th>
+                                            <th>Category</th>
                                             <th>Class</th>
                                             <th></th>
                                         </tr>

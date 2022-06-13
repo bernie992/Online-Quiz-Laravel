@@ -41,7 +41,7 @@
                                         <h1 class="align-left display-4">{{ $classes->count() }}</h1>
                                         <p class="lead align-left">Classes</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/classes">View Class</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/class">View Class</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">

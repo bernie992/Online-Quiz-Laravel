@@ -29,7 +29,7 @@ Route::resource('take', 'TakeQuizController', ['only' => [//Related to taking of
 ]]); 
 
 Route::resource('class', 'ClassController',  ['only' => [//Class
-    'store', 'show', 'destroy'
+    'index', 'store', 'show', 'destroy'
 ]]);
 
 Route::resource('question', 'QuestionController', ['only' => [//Question
@@ -50,6 +50,10 @@ Route::resource('account', 'AccountController', ['only' => [//Account management
 
 Route::resource('questionnaire', 'QuestionnaireController', ['only' => [//Questionnaire
     'show', 
+]]);
+
+Route::resource('landingpage', 'LandingController', ['only' => [//Questionnaire
+    'index', 
 ]]);
 
 Route::post('join', 'QuizController@JoinClass');

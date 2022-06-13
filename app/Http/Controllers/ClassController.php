@@ -16,6 +16,15 @@ class ClassController extends Controller
     {
         $this->middleware('auth');
     }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index(){
+        $class = Classe::all();
+       
+    }
 
     /**
      * Store a newly created class in storage.

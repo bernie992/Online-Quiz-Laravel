@@ -40,9 +40,12 @@
                 <div class="col-lg-5 col-" style="top: 25em; left: 74%;">
           
                                <!-- Button trigger modal -->
+
                                <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
                                 Apply Job!
                                 </button>
+                               <a href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
+
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">

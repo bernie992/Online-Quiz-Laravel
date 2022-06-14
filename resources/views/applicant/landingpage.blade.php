@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.job')
 
 @section('title', 'An Online Applicant Exam Management System')
 @section('content')
@@ -37,7 +37,7 @@
         <img class="image" src="assets/img/job.jpg" alt="">
         
             <div class="container">
-                <div class="col-lg-5 col-" style="top: 25em; left: 74%;">
+                <div class="col-lg-5 col-" style="top: 25em; left: 44%;">
           
                                <!-- Button trigger modal -->
 

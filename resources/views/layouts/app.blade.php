@@ -39,10 +39,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About us</a>
                     </li>
+                    <li>
+                        <a href="{{ url('/landingpage') }}" class="nav-link">Job-Seeker</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Report a bug</a>
                     </li>
                 </ul>
+
                 <!-- Login here -->
                 @if(Auth::guest())
                     <ul class="navbar-nav">

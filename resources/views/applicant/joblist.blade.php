@@ -2,10 +2,17 @@
 
 @section('title', 'An Online Applicant Exam Management System')
 @section('content')
+<style> 
+  
+.job-list-det:hover {
+	background-color: aquamarine;
+}
+    
+</style>
         <!-- Page Wrapper -->
         <div class="page-wrapper job-wrapper">
             <!-- Page Content -->
-            <div class="content container">
+            <div class="content container" style="background-color: Silver;">
                 <!-- Page Header -->
                 <div class="page-header">
                     <div class="row">
@@ -40,7 +47,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Android Devloper</h3>
@@ -60,7 +67,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Web Devloper</h3>
@@ -80,7 +87,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Android Devloper</h3>
@@ -100,7 +107,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Web Devloper</h3>
@@ -120,7 +127,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Android Devloper</h3>
@@ -140,7 +147,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Web Devloper</h3>
@@ -160,7 +167,7 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="job-list" href="">
+                        <a class="job-list" href="{{url('/jobview')}}">
                             <div class="job-list-det">
                                 <div class="job-list-desc">
                                     <h3 class="job-list-title">Android Devloper</h3>
@@ -183,4 +190,4 @@
             </div>
         </div>
         <!-- /Page Wrapper -->
-@endsection;
+@endsection

@@ -2,10 +2,28 @@
 
 @section('title', 'An Online Applicant Exam Management System')
 @section('content')
+<style> 
+    .job-list-det{
+    border: 2px solid #f43b48;
+    color: #f43b48;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    }
+.job-list-det:hover {
+	background-color: #f43b48;
+	color: red;
+}
+    
+</style>
         <!-- Page Wrapper -->
-        <div class="page-wrapper job-wrapper">
+        <div class="page-wrapper job-wrapper" style="background-color: Silver;">
             <!-- Page Content -->
-            <div class="content container">
+            <div class="content container" style="background-color: Silver;">
                 <!-- Page Header -->
                 <div class="page-header">
                     <div class="row align-items-center">
@@ -121,8 +139,8 @@
                                 <div class="form-group">
                                     <label>Upload your CV</label>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="cv_upload">
-                                        <label class="custom-file-label" for="cv_upload">Choose file</label>
+                                        <input type="file" class="custom-file-input" id="cv_upload" >
+                                        <label class="custom-file-label" for="cv_upload" >Choose File</label>
                                     </div>
                                 </div>
                                 <div class="submit-section">
@@ -136,4 +154,4 @@
             <!-- /Apply Job Modal -->
         </div>
         <!-- /Page Wrapper -->
-@endsection;
+@endsection

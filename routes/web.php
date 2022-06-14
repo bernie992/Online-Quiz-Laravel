@@ -53,11 +53,15 @@ Route::resource('questionnaire', 'QuestionnaireController', ['only' => [//Questi
 ]]);
 
 Route::resource('landingpage', 'LandingController', ['only' => [//Questionnaire
-    'index', 
+    'index',
+]]);
+
+Route::resource('joblist', 'JobController', ['only' => [//Job
+    'index',
 ]]);
 
 Route::post('join', 'QuizController@JoinClass');
-
+Route::get('jobview', 'JobController@jobview');
 // Route::post('/test', function (){//Debugging purposes only
 //     return $_POST;
 // });

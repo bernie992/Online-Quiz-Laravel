@@ -38,62 +38,12 @@
             <div class="container">
 
                 <div class="col-lg-5 col-" style="top: 25em; left: 44%;">
-<<<<<<< Updated upstream
+
           
                                <!-- Button trigger modal -->
 
-    
                                <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
 
-
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content" >
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Applicant Form</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                    <form>
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input class="form-control" type="text" id="name">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Address</label>
-                                    <input class="form-control" type="text" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Upload your CSV</label></button2>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="cv_upload">
-                                        <button1 class="button button1" 8px> <label class="custom-file-label" for="cv_upload">Choose file</label></button1><input class="border" type="text">
-                                    </div>
-                                </div>
-                                <div class="submit-section">
-                                    <button class="btn btn-primary submit-btn">Submit</button>
-                                </div>
-                            </form>
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          
-=======
-                        <!-- Button trigger modal -->
-                        <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
->>>>>>> Stashed changes
                 </div>
             </div>
     </main>

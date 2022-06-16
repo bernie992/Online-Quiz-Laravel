@@ -39,7 +39,7 @@ color: orange;
         }
 
     .card:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
         }
 
 </style>
@@ -112,6 +112,10 @@ color: orange;
                     </div>
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="quiz-events" role="tabpanel" aria-labelledby="quiz-events">
                         <h1 class="text-left">Exam Events</h1>
+                        <div class="col-md-12 bg-white text-right">
+                            {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
+                            <a class="btn btn-primary" href="/quiz/create">New exam event</a>
+                        </div>
                         <div class="col-10">
                             <h4>Current Exam</h4>
                             <table class="table table-hover">
@@ -157,13 +161,14 @@ color: orange;
                                 </table>
                             </div>
                         @endif
-                        {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
-                        <a class="btn btn-primary" href="/quiz/create">New exam event</a>
                     </div>
 
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="my-classes" role="tabpanel" aria-labelledby="my-classes"><!-- Manage Class -->
                         <!-- Fetch instructor's subjects -->
                         <h1>My Classes</h1>
+                        <div class="col-md-12 bg-white text-right">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#NewClassModal">New class</button>
+                        </div>
                         <div class="row">
                             <!-- Class entry -->
                             @foreach ($classes as $classe)
@@ -178,16 +183,12 @@ color: orange;
                                     </div>
                                 </div>
                             @endforeach
-                            
                         </div>
-                        <div class="col">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#NewClassModal">New class</button>
-                        </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
-                        <h3>Advanced Settings</h3>
+                        <center class="mt-5">
+                            <h3>Advanced Settings</h3>
                             <div class="cards" style="width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
@@ -197,6 +198,8 @@ color: orange;
                                     </li>
                                 </ul>
                             </div>
+                        </center>
+                   
                     </div>
 
                 </div>

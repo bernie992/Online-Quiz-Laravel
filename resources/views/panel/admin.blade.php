@@ -14,7 +14,7 @@
         }
 
     .card:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
         }
 
 </style>
@@ -155,8 +155,9 @@
                     </div>
 
                     <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
-                        <h3>Advanced Settings</h3>
-                            <div class="card col-12" style="max-width: 40rem;">
+                        <center class="mt-5">
+                            <h3>Advanced Settings</h3>
+                            <div class="cards col-12" style="max-width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <a class="btn btn-primary" href="/subjects" style="float: right">Manage Category</a>
@@ -175,6 +176,7 @@
                                     </li>
                                 </ul>
                             </div>
+                        </center>
                     </div>
 
                 </div>

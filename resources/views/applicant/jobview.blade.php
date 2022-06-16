@@ -127,8 +127,6 @@
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="form-control" type="text">
-                                </div>\
-                                    <input class="form-control" type="text">
                                 </div>
                                 <div class="form-group">
                                     <label>Message</label>

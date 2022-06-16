@@ -1,10 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.apps')
 @section('title', 'Quiz Dashboard')
 @section('content')
 <style>
     main{
         padding-top: 2.5rem;
     }
+
     .card-footer{
         font-size: 18px;
     }
@@ -26,7 +27,21 @@ color: orange;
 .card-footer:active {
 color: orange;
 }
-</style
+
+
+    .card {
+        padding: 5px;
+        transition: transform .2s;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        }
+
+    .card:hover {
+        transform: scale(1.1);
+        }
+
 </style>
 <main>
     <div class="container-fluid">
@@ -97,6 +112,10 @@ color: orange;
                     </div>
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="quiz-events" role="tabpanel" aria-labelledby="quiz-events">
                         <h1 class="text-left">Exam Events</h1>
+                        <div class="col-md-12 bg-white text-right">
+                            {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
+                            <a class="btn btn-primary" href="/quiz/create">New exam event</a>
+                        </div>
                         <div class="col-10">
                             <h4>Current Exam</h4>
                             <table class="table table-hover">
@@ -142,13 +161,14 @@ color: orange;
                                 </table>
                             </div>
                         @endif
-                        {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
-                        <a class="btn btn-primary" href="/quiz/create">New exam event</a>
                     </div>
 
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="my-classes" role="tabpanel" aria-labelledby="my-classes"><!-- Manage Class -->
                         <!-- Fetch instructor's subjects -->
                         <h1>My Classes</h1>
+                        <div class="col-md-12 bg-white text-right">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#NewClassModal">New class</button>
+                        </div>
                         <div class="row">
                             <!-- Class entry -->
                             @foreach ($classes as $classe)
@@ -163,17 +183,13 @@ color: orange;
                                     </div>
                                 </div>
                             @endforeach
-                            
                         </div>
-                        <div class="col">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#NewClassModal">New class</button>
-                        </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
-                        <h3>Advanced Settings</h3>
-                            <div class="card" style="width: 40rem;">
+                        <center class="mt-5">
+                            <h3>Advanced Settings</h3>
+                            <div class="cards" style="width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <button class="btn btn-primary" data-toggle="modal" data-target="#changePassword" style="float: right">Change password</button>
@@ -182,6 +198,8 @@ color: orange;
                                     </li>
                                 </ul>
                             </div>
+                        </center>
+                   
                     </div>
 
                 </div>

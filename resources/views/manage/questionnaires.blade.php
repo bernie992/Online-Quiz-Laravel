@@ -139,10 +139,10 @@
                 <div class="form-group" id="cf-mc" style="display: none">
                     <label for="">Correct choice</label>
                     <select name="c-mc" id="c-mc" class="form-control">
-                        <option value="1">Choice 1</option>
-                        <option value="2">Choice 2</option>
-                        <option value="3">Choice 3</option>
-                        <option value="4">Choice 4</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                        <option value="4">D</option>
                     </select>
                 </div>
                 <input type="hidden" id="_qid" value="">
@@ -181,12 +181,12 @@
                 </div>
                 <div id="a_f-multiple-choice" style="display: none;">
                     <div class="form-group form-inline">
-                        <input type="text" id="a_mc0" name="mc[]" class="form-control col-5 mr-auto" placeholder="Choice 1">
-                        <input type="text" id="a_mc1" name="mc[]" class="form-control col-5 ml-auto" placeholder="Choice 2">
+                        <input type="text" id="a_mc0" name="mc[]" class="form-control col-5 mr-auto" placeholder="A">
+                        <input type="text" id="a_mc1" name="mc[]" class="form-control col-5 ml-auto" placeholder="B">
                     </div>
                     <div class="form-group form-inline">
-                        <input type="text" id="a_mc2" name="mc[]" class="form-control col-5 mr-auto" placeholder="Choice 3">
-                        <input type="text" id="a_mc3" name="mc[]" class="form-control col-5 ml-auto" placeholder="Choice 4">
+                        <input type="text" id="a_mc2" name="mc[]" class="form-control col-5 mr-auto" placeholder="C">
+                        <input type="text" id="a_mc3" name="mc[]" class="form-control col-5 ml-auto" placeholder="D">
                     </div>
                 </div>
 
@@ -206,10 +206,10 @@
                 <div class="form-group" id="a_cf-mc" style="display: none">
                     <label for="">Correct choice</label>
                     <select name="c-mc" id="c-mc" class="form-control">
-                        <option value="1">Choice 1</option>
-                        <option value="2">Choice 2</option>
-                        <option value="3">Choice 3</option>
-                        <option value="4">Choice 4</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                        <option value="4">D</option>
                     </select>
                 </div>
                 <input type="hidden" id="a_qid" value="{{ $q->questionnaire_id }}">

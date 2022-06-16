@@ -44,7 +44,7 @@
                             <div class="card-body">
                                 <p class="text-center text-muted">
                                     Already have an account and just want to join to a class?
-                                    <a href="">Click here</a> to join!
+                                    <a href=" {{ route('login') }} ">Click here</a> to LogIn!
                                 </p>
                                 <hr>
                                 <form method="POST" action="{{ route('register') }}">

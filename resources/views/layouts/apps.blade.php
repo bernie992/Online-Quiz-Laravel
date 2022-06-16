@@ -39,9 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About us</a>
                     </li>
-                    <li>
-                        <a href="/landingpage" class="nav-link">Job Hiring</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Report a bug</a>
                     </li>
@@ -73,9 +70,7 @@
                             </div>
                         </li>
                     </ul>
-
                 @endif
-
             </div>
         </nav>
     </header>

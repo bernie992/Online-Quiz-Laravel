@@ -29,9 +29,8 @@
     border-width: 20px;
  
 }
-
-   
 </style>
+
     <main>
   
         <img class="image" src="assets/img/job.jpg" alt="">
@@ -91,8 +90,8 @@
                 </div>
 
             </div>
-        </div>
-    </main>
+
+</main>
    
     <script>
         function AddSubject() {

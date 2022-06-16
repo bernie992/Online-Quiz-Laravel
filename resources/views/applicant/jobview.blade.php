@@ -134,10 +134,12 @@
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="form-control" type="text">
+
                                 </div>
                                 <div class="form-group">
                                     <label>Email Address</label>
                                     <input class="form-control" type="text" name="email">
+
                                 </div>
                                 <div class="form-group">
                                     <label>Message</label>

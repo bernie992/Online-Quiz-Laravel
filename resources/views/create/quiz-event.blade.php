@@ -59,19 +59,19 @@
                 <div class="multiple-choice" id="mc-0" style="display: none">
                     <div class="col-12" style="padding-top: 10px;">
                         <div class="row">
-                            <div class="col-3"><label>Choice 1</label><input name="mc[0][0]" type="text" class="form-control"></div>
-                            <div class="col-3"><label>Choice 2</label><input name="mc[0][1]" type="text" class="form-control"></div>
-                            <div class="col-3"><label>Choice 3</label><input name="mc[0][2]" type="text" class="form-control"></div>
-                            <div class="col-3"><label>Choice 4</label><input name="mc[0][3]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>A</label><input name="mc[0][0]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>B</label><input name="mc[0][1]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>C</label><input name="mc[0][2]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>D</label><input name="mc[0][3]" type="text" class="form-control"></div>
                         </div>
                         <div class="row" style="padding-top: 10px;">
                             <div class="col-8">
                                 <label for="">Correct choice</label>
                                 <select name="c-mc[0]" id="c-mc[0]" class="form-control">
-                                    <option value="1">Choice 1</option>
-                                    <option value="2">Choice 2</option>
-                                    <option value="3">Choice 3</option>
-                                    <option value="4">Choice 4</option>
+                                    <option value="1">A </option>
+                                    <option value="2">B </option>
+                                    <option value="3">C </option>
+                                    <option value="4">D </option>
                                 </select>
                             </div>
                         </div>
@@ -104,9 +104,9 @@
             </div>
             <hr>
         </div>
-        <div class="col-12">
+        <center><div class="col-2">
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
-        </div>
+        </div></center>
     </form>
 </div>
 <script>
@@ -144,19 +144,19 @@
                 <div class="multiple-choice" id="mc-{0}" style="display: none">
                     <div class="col-12" style="padding-top: 10px;">
                         <div class="row">
-                            <div class="col-3"><label>Choice 1</label><input name="mc[{0}][0]" type="text" class="form-control"></div>
-                            <div class="col-3"><label>Choice 2</label><input name="mc[{0}][1]" type="text" class="form-control"></div>
-                            <div class="col-3"><label>Choice 3</label><input name="mc[{0}][2]" type="text" class="form-control"></div>
-                            <div class="col-3"><label>Choice 4</label><input name="mc[{0}][3]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>A</label><input name="mc[{0}][0]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>B</label><input name="mc[{0}][1]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>C</label><input name="mc[{0}][2]" type="text" class="form-control"></div>
+                            <div class="col-3"><label>D</label><input name="mc[{0}][3]" type="text" class="form-control"></div>
                         </div>
                         <div class="row" style="padding-top: 10px;">
                             <div class="col-8">
                                 <label for="">Correct choice</label>
                                 <select name="c-mc[{0}]" id="c-mc[{0}]" class="form-control">
-                                    <option value="1">Choice 1</option>
-                                    <option value="2">Choice 2</option>
-                                    <option value="3">Choice 3</option>
-                                    <option value="4">Choice 4</option>
+                                    <option value="1">A</option>
+                                    <option value="2">B</option>
+                                    <option value="3">C</option>
+                                    <option value="4">D</option>
                                 </select>
                             </div>
                         </div>

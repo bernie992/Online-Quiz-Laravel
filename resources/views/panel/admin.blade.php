@@ -1,10 +1,22 @@
-@extends('layouts.app')
+@extends('layouts.apps')
 @section('title', 'Administrator\'s Dashboard')
 @section('content')
 <style>
     main{
         padding-top: 2.5rem;
     }
+    .card {
+        transition: transform .2s;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        }
+
+    .card:hover {
+        transform: scale(1.5);
+        }
+
 </style>
 <main>
     <div class="container-fluid">

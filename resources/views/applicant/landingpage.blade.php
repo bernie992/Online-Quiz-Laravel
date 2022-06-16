@@ -23,7 +23,7 @@
 }
 .button1:hover {
   background-color: #4CAF50;
-  color: white; jordan poole
+  color: white; 
 }
 .border{
     border-width: 20px;
@@ -34,15 +34,10 @@
 </style>
     <main>
   
-        <img class="image" src="assets/img/job.jpg" alt="">
+        <img class="image" src="assets/img/slide.gif" alt="">                      
         
             <div class="container">
                 <div class="col-lg-5 col-" style="top: 25em; left: 74%;">
-          
-                               <!-- Button trigger modal -->
-
-    
-                               <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
 
                               
             </div>

@@ -5,6 +5,28 @@
     main{
         padding-top: 2.5rem;
     }
+    .card-footer{
+        font-size: 18px;
+    }
+    .card-footer:link {
+color: white;
+}
+
+/* When it is visited link */
+.card-footer:visited {
+color: white;
+}
+
+/* When you mouse over link */
+.card-footer:hover {
+color: orange;
+}
+
+/* When it is selected link */
+.card-footer:active {
+color: orange;
+}
+</style
 </style>
 <main>
     <div class="container-fluid">
@@ -41,7 +63,7 @@
                                         <h1 class="align-left display-4">{{ $quiz_events->count() }}</h1>
                                         <p class="lead align-left">Exams on queue</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View exams</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="">View exams</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -50,7 +72,7 @@
                                         <h1 class="align-left display-4">{{ $finished_quiz_events->count() }}</h1>
                                         <p class="lead align-left">Exams finished</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View exams</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="">View exams</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -59,7 +81,7 @@
                                         <h1 class="align-left display-4" >{{ $classes->count() }}</h1>
                                         <p class="lead align-left">Classes</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View classes</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="">View classes</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -68,7 +90,7 @@
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
                                         <p class="lead align-left">Category</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View category</a>
+                                    <a class="card-footer  clearfix small z-1 align-left" href="">View category</a>
                                 </div>
                             </div>
                         </div>

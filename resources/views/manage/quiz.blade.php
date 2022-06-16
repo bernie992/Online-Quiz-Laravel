@@ -48,7 +48,7 @@
             <button href="" onclick="javascript:ChangeQuizStatus({{ $quiz_details->quiz_event_id }}, 1)" class="btn btn-primary">Enable Exam</button>
             @elseif($quiz_details->quiz_event_status == 1)
             <button href="" onclick="javascript:ChangeQuizStatus({{ $quiz_details->quiz_event_id }}, 0)" class="btn btn-primary">Disable Exam</button>
-            <button href="" onclick="javascript:ChangeQuizStatus({{ $quiz_details->quiz_event_id }}, 2)" class="btn btn-primary btn-danger">End Exam</button>
+
             @endif
         </div>
         <div class="col-lg-9 pt-4">

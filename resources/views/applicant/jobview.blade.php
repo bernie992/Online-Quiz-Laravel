@@ -133,17 +133,11 @@
                         {{ csrf_field() }}
                                 <div class="form-group">
                                     <label>Name</label>
-<<<<<<< Updated upstream
                                     <input class="form-control" type="text">
-                                </div>\
-                                    <input class="form-control" type="text">
-=======
-                                    <input class="form-control" type="text" name="name">
                                 </div>
                                 <div class="form-group">
                                     <label>Email Address</label>
                                     <input class="form-control" type="text" name="email">
->>>>>>> Stashed changes
                                 </div>
                                 <div class="form-group">
                                     <label>Message</label>

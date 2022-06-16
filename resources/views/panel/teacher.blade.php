@@ -1,10 +1,22 @@
-@extends('layouts.app')
+@extends('layouts.apps')
 @section('title', 'Quiz Dashboard')
 @section('content')
 <style>
     main{
         padding-top: 2.5rem;
     }
+    .card {
+        padding: 5px;
+        transition: transform .2s;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        }
+
+    .card:hover {
+        transform: scale(1.5);
+        }
 </style>
 <main>
     <div class="container-fluid">
@@ -151,7 +163,7 @@
 
                     <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
                         <h3>Advanced Settings</h3>
-                            <div class="card" style="width: 40rem;">
+                            <div class="cards" style="width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <button class="btn btn-primary" data-toggle="modal" data-target="#changePassword" style="float: right">Change password</button>

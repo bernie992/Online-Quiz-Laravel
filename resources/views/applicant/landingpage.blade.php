@@ -29,25 +29,15 @@
     border-width: 20px;
  
 }
-
-   
 </style>
-    <main>
-  
-        <img class="image" src="assets/img/job.jpg" alt="">
-        
-            <div class="container">
-                <div class="col-lg-5 col-" style="top: 25em; left: 44%;">
-          
-                               <!-- Button trigger modal -->
-
-    
-                               <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
-
-                              
-            </div>
+<main>
+    <img class="image" src="assets/img/job.jpg" alt="">
+    <div class="container">
+        <div class="col-lg-5 col-" style="top: 25em; left: 44%;">
+            <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>               
         </div>
-    </main>
+    </div>
+</main>
    
     
 @endsection

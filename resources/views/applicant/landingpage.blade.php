@@ -38,6 +38,7 @@
             <div class="container">
 
                 <div class="col-lg-5 col-" style="top: 25em; left: 44%;">
+<<<<<<< Updated upstream
           
                                <!-- Button trigger modal -->
 
@@ -89,31 +90,12 @@
                         </div>
                     </div>
           
+=======
+                        <!-- Button trigger modal -->
+                        <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
+>>>>>>> Stashed changes
                 </div>
-
             </div>
-
-</main>
+    </main>
    
-    <script>
-        function AddSubject() {
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var message = $('#message').val();
-        var cv_upload = $('#cv_upload').val();
-
-
-        $.ajax({
-            url: '/landingpage/',
-            type: 'POST', //type is any HTTP method
-            data: {
-                s_code, s_des
-            }, //Data as js object
-            success: function () {
-                window.location.reload(true);
-            }
-        });
-    }
-    </script>
-    
 @endsection

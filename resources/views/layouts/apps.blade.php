@@ -70,7 +70,6 @@
                             </div>
                         </li>
                     </ul>
-
                 @endif
 
             </div>

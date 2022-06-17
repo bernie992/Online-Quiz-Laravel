@@ -47,16 +47,7 @@
                     <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard">
                         <h1 class="align-left">Dashboard</h1><hr>
                         <div class="row">
-                            <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-primary">
-                                    <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $classes->count() }}</h1>
-                                        <p class="lead align-left">Classes</p>
-                                    </div>
                             
-                                    <a class="card-footer text-white clearfix small z-1 align-left"data-toggle="pill" href="#classes">View Class</a>
-                                </div>
-                            </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-secondary">
                                     <div class="card-body">
@@ -78,10 +69,10 @@
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-info">
                                     <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $students }}</h1>
+                                        <h1 class="align-left display-4">{{ $applicant}}</h1>
                                         <p class="lead align-left">Applicant</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/student">View Applicant</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/application_list">View Applicant</a>
                                 </div>
                             </div>
                         </div>

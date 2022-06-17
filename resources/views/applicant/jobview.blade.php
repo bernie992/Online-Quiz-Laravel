@@ -113,9 +113,6 @@
                 </div>
             </div>
             <!-- /Page Content -->
-
-
-
             <!-- Apply Job Modal -->
             
             @csrf
@@ -158,7 +155,6 @@
                     </div>
                 </div>
             </div>
-            
             <!-- /Apply Job Modal -->
         </div>
         <!-- /Page Wrapper -->

@@ -65,7 +65,7 @@
 
     <main style="font-family: fantasy;">
   
-        <img class="image" src="assets/img/slide.gif" alt="">                      
+        <img class="image" src="assets/img/hire.gif" alt="">                      
         
             <div class="container">
                 <div class="col-lg-5 col-5" style="top: 15em; left: 75%;">

@@ -39,7 +39,6 @@
   --color-2: #3D8DAE;
   --color-3: #E4A9A8;
 }
-
 .title-word-2 {
   --color-1: #DBAD4A;
   --color-2: #ACCFCB;

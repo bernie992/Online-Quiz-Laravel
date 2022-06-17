@@ -75,28 +75,10 @@ color: orange;
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-primary">
                                     <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $quiz_events->count() }}</h1>
-                                        <p class="lead align-left">Exams on queue</p>
+                                        <h1 class="align-left display-4">{{ $applicant}}</h1>
+                                        <p class="lead align-left">Applicant</p>
                                     </div>
-                                    <a class="card-footer clearfix small z-1 align-left" href="">View exams</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-secondary">
-                                    <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $finished_quiz_events->count() }}</h1>
-                                        <p class="lead align-left">Exams finished</p>
-                                    </div>
-                                    <a class="card-footer clearfix small z-1 align-left" href="">View exams</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-info">
-                                    <div class="card-body">
-                                        <h1 class="align-left display-4" >{{ $classes->count() }}</h1>
-                                        <p class="lead align-left">Classes</p>
-                                    </div>
-                                    <a class="card-footer clearfix small z-1 align-left" href="">View classes</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="/application_list">View Applicant</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -105,7 +87,7 @@ color: orange;
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
                                         <p class="lead align-left">Category</p>
                                     </div>
-                                    <a class="card-footer  clearfix small z-1 align-left" href="">View category</a>
+                                    <a class="card-footer  clearfix small z-1 align-left" href="/subjects">View category</a>
                                 </div>
                             </div>
                         </div>

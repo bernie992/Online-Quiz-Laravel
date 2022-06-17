@@ -60,10 +60,9 @@
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
 }
-
 </style>
-
     <main style="font-family: fantasy;">
+
   
         <img class="image" src="assets/img/hire.gif" alt="">                      
         
@@ -81,6 +80,6 @@
                 </div>
                 <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Click Here !</a>
             </div>
+
     </main>
-   
 @endsection

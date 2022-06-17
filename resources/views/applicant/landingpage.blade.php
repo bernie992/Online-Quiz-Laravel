@@ -60,38 +60,22 @@
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
 }
-
 </style>
-
     <main style="font-family: fantasy;">
-  
-        <img class="image" src="assets/img/slide.gif" alt="">                      
-        
-            <div class="container">
-<<<<<<< Updated upstream
-                <div class="col-lg-5 col-5" style="top: 15em; left: 75%;">
-                    <h3 class="title-word title-word-1 display-4.5">
-                        WE ARE
-                    </h3>
-                    <h1 class="title-word title-word-2 display-1" style="font-family: fantasy;">
-                        HIRING
-                    </h1>
-                    <h5 class="title-word title-word-3 display-4">
-                        join with us !!!
-                    </h5>  
-=======
-
-                <div class="col-lg-5 col-" style="top: 25em; left: 44%;">
-
-                               <!-- Button trigger modal -->
-
-    
-                               <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Apply Job</a>
-
->>>>>>> Stashed changes
-                </div>
-                <a style="background:#7FFD4;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn">Click Here !</a>
-            </div>
+      <img class="image" src="assets/img/slide.gif" alt="">                      
+      <div class="container">
+          <div class="col-lg-5 col-5" style="top: 15em; left: 75%;">
+              <h3 class="title-word title-word-1 display-4.5">
+                  WE ARE
+              </h3>
+              <h1 class="title-word title-word-2 display-1" style="font-family: fantasy;">
+                  HIRING
+              </h1>
+              <h5 class="title-word title-word-3 display-4">
+                  join with us !!!
+              </h5>  
+          </div>
+          <a style="background:#7FFD4; top: 30em; left: 71.5%;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn col-1">Click Here !</a>
+      </div>
     </main>
-   
 @endsection

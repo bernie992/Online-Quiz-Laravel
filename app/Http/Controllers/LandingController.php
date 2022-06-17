@@ -14,6 +14,7 @@ class LandingController extends Controller
      */
     public function index()
     {
+      
         return view('applicant.landingpage');
     }
 
@@ -100,6 +101,6 @@ class LandingController extends Controller
     {
         $applicant = Landing::all();
 
-        return view('applicant.applicantlist');
+        return view('applicant.applicantlist', compact('applicant'));
     }
 }

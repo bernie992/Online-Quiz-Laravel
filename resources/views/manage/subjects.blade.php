@@ -7,7 +7,7 @@
     }
 </style>
 <div class="container">
-    <h1>Categories</h1>
+    <h1>Department Categories</h1>
     <div class="row">
         <div class="col-9">
 
@@ -15,9 +15,8 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Category Code</th>
-                        <th>Description</th>
-                        <th>Classes</th>
+                        <th>Department Code</th>
+                        <th>Department Description</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -27,7 +26,6 @@
                         <th scope="row">{{ $s->subject_id }}</th>
                         <td>{{$s->subject_code}}</td>
                         <td>{{$s->subject_desc}}</td>
-                        <td>{{$s->classe->count()}}</td>
                         <td>
                             <button href="" class="btn btn-primary btn-sm" type="button" class="btn btn-primary btn-sm"
                                 data-toggle="modal" data-target="#editSubject"
@@ -45,7 +43,7 @@
             </table>
         </div>
         <div class="col-3">
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject"> <span class="fa fa-plus"></span> Add new Category</button>
+            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject"> <span class="fa fa-plus"></span> Add new Department</button>
         </div>
     </div>
 </div>
@@ -54,7 +52,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Category</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Department Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -64,11 +62,11 @@
                     <input type="hidden" id="usrid" value="-1">
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="">Category Code</label>
+                            <label for="">Department Code</label>
                             <input id="sub_code" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="">Category Description</label>
+                            <label for="">Department</label>
                             <input id="sub_des" type="text" class="form-control" placeholder="">
                         </div>
                         <input type="hidden" id="sub_id">
@@ -88,7 +86,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add Department Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -98,11 +96,11 @@
                     <input type="hidden" id="usrid" value="-1">
                     <div class="form-group">
                         <div class="form-group">
-                            <label for="">Category Code</label>
+                            <label for="">Department Code</label>
                             <input id="s_code_new" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="">Category Description</label>
+                            <label for="">Department Category</label>
                             <input id="s_desc_new" type="text" class="form-control" placeholder="">
                         </div>
                     </div>

@@ -35,20 +35,20 @@
 }
 
 .title-word-1 {
-  color-1: #DF8453;
-  color-2: #3D8DAE;
-  color-3: #E4A9A8;
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
 }
 .title-word-2 {
-  color-1: #DBAD4A;
-  color-2: #ACCFCB;
-  color-3: #17494D;
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
 }
 
 .title-word-3 {
-  color-1: #ACCFCB;
-  color-2: #E4A9A8;
-  color-3: #ACCFCB;
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
 }
 
 @keyframes color-animation {
@@ -61,25 +61,6 @@
   100%  {color: var(--color-1)}
 }
 </style>
-    <main style="font-family: fantasy;">
-
-
-      <img class="image" src="assets/img/slide.gif" alt="">                      
-      <div class="container">
-          <div class="col-lg-5 col-5" style="top: 15em; left: 75%;">
-              <h3 class="title-word title-word-1 display-4.5">
-                  WE ARE
-              </h3>
-              <h1 class="title-word title-word-2 display-1" style="font-family: fantasy;">
-                  HIRING
-              </h1>
-              <h5 class="title-word title-word-3 display-4">
-                  join with us !!!
-              </h5>  
-          </div>
-          <a style="background:#7FFD4; top: 30em; left: 71.5%;" href="{{ url('/joblist') }}" class="btn btn-primary apply-btn col-1">Click Here !</a>
-      </div>
-
   
 
   

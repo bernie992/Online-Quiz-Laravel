@@ -15,7 +15,8 @@
                         aria-expanded="true">Class</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" aria-expanded="true">Exams</a>
+                    <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" 
+                    aria-expanded="true">Exams</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="v-pills-students" data-toggle="pill" href="#students-tab" role="tab" aria-controls="v-pills-students"
@@ -68,13 +69,13 @@
                         </div>
                     </div>
                 </div>
-
+<!-- Exam Events -->
                 <div class="tab-pane fade" id="quiz-tab" role="tabpanel" aria-lavelledby="quiz-tab">
                     <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Topic</th>
-                                <th>Category</th>
+                                <th>Department</th>
                                 <th>Class</th>
                                 <th>Status</th>
                                 <th></th>

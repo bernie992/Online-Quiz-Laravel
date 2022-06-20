@@ -31,10 +31,10 @@
                         <a class="nav-link {{ $classes->count() == 0 ? 'disabled' : '' }}" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
                             aria-expanded="true">Exam Events</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link {{ $classes->count() == 0 ? 'disabled' : '' }} " id="v-pills-profile-tab" data-toggle="pill" href="#classes" role="tab" aria-controls="v-pills-profile"
                             aria-expanded="true">Classes</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
                             aria-expanded="true">Settings</a>
@@ -52,7 +52,7 @@
                                 <div class="card text-white bg-secondary">
                                     <div class="card-body">
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
-                                        <p class="lead align-left">Category</p>
+                                        <p class="lead align-left">Department</p>
                                     </div>
                                     <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects">View category</a>
                                 </div>

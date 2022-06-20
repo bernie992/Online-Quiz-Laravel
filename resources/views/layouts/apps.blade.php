@@ -70,9 +70,7 @@
                             </div>
                         </li>
                     </ul>
-
                 @endif
-
             </div>
         </nav>
     </header>

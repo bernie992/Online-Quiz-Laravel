@@ -14,7 +14,7 @@
         }
 
     .card:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
         }
 
 </style>
@@ -31,10 +31,10 @@
                         <a class="nav-link {{ $classes->count() == 0 ? 'disabled' : '' }}" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
                             aria-expanded="true">Exam Events</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link {{ $classes->count() == 0 ? 'disabled' : '' }} " id="v-pills-profile-tab" data-toggle="pill" href="#classes" role="tab" aria-controls="v-pills-profile"
                             aria-expanded="true">Classes</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
                             aria-expanded="true">Settings</a>
@@ -47,20 +47,12 @@
                     <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard">
                         <h1 class="align-left">Dashboard</h1><hr>
                         <div class="row">
-                            <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-primary">
-                                    <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $classes->count() }}</h1>
-                                        <p class="lead align-left">Classes</p>
-                                    </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/class">View Class</a>
-                                </div>
-                            </div>
+                            
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-secondary">
                                     <div class="card-body">
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
-                                        <p class="lead align-left">Category</p>
+                                        <p class="lead align-left">Department</p>
                                     </div>
                                     <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects">View category</a>
                                 </div>
@@ -77,10 +69,10 @@
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-info">
                                     <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $students }}</h1>
+                                        <h1 class="align-left display-4">{{ $applicant}}</h1>
                                         <p class="lead align-left">Applicant</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/student">View Applicant</a>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" href="/application_list">View Applicant</a>
                                 </div>
                             </div>
                         </div>
@@ -155,8 +147,9 @@
                     </div>
 
                     <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
-                        <h3>Advanced Settings</h3>
-                            <div class="card col-12" style="max-width: 40rem;">
+                        <center class="mt-5">
+                            <h3>Advanced Settings</h3>
+                            <div class="cards col-12" style="max-width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <a class="btn btn-primary" href="/subjects" style="float: right">Manage Category</a>
@@ -175,6 +168,7 @@
                                     </li>
                                 </ul>
                             </div>
+                        </center>
                     </div>
 
                 </div>

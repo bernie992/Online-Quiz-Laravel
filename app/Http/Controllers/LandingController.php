@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Landing;
 
 class LandingController extends Controller
 {
@@ -13,6 +14,7 @@ class LandingController extends Controller
      */
     public function index()
     {
+      
         return view('applicant.landingpage');
     }
 
@@ -34,7 +36,7 @@ class LandingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -80,5 +82,25 @@ class LandingController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function applyjob(Request $request)
+    {
+        $landing = new Landing();
+        $landing -> name=$request->name;
+        $landing -> email=$request->email;
+        $landing -> message=$request->message;
+        $landing -> cv=$request->cv_upload;
+
+        $landing -> save(); 
+
+        return redirect('/landingpage');
+    }
+
+    public function applicantlist()
+    {
+        $applicant = Landing::all();
+
+        return view('applicant.applicantlist', compact('applicant'));
     }
 }

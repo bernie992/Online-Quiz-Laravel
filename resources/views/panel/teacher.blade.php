@@ -5,6 +5,30 @@
     main{
         padding-top: 2.5rem;
     }
+
+    .card-footer{
+        font-size: 18px;
+    }
+    .card-footer:link {
+color: white;
+}
+
+/* When it is visited link */
+.card-footer:visited {
+color: white;
+}
+
+/* When you mouse over link */
+.card-footer:hover {
+color: orange;
+}
+
+/* When it is selected link */
+.card-footer:active {
+color: orange;
+}
+
+
     .card {
         padding: 5px;
         transition: transform .2s;
@@ -15,8 +39,9 @@
         }
 
     .card:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
         }
+
 </style>
 <main>
     <div class="container-fluid">
@@ -50,28 +75,10 @@
                             <div class="col-lg-3 col-sm-12 pb-3">
                                 <div class="card text-white bg-primary">
                                     <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $quiz_events->count() }}</h1>
-                                        <p class="lead align-left">Exams on queue</p>
+                                        <h1 class="align-left display-4">{{ $applicant}}</h1>
+                                        <p class="lead align-left">Applicant</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View exams</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-secondary">
-                                    <div class="card-body">
-                                        <h1 class="align-left display-4">{{ $finished_quiz_events->count() }}</h1>
-                                        <p class="lead align-left">Exams finished</p>
-                                    </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View exams</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-info">
-                                    <div class="card-body">
-                                        <h1 class="align-left display-4" >{{ $classes->count() }}</h1>
-                                        <p class="lead align-left">Classes</p>
-                                    </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View classes</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="/application_list">View Applicant</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
@@ -80,13 +87,17 @@
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
                                         <p class="lead align-left">Category</p>
                                     </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" href="">View category</a>
+                                    <a class="card-footer  clearfix small z-1 align-left" href="/subjects">View category</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="quiz-events" role="tabpanel" aria-labelledby="quiz-events">
                         <h1 class="text-left">Exam Events</h1>
+                        <div class="col-md-12 bg-white text-right">
+                            {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
+                            <a class="btn btn-primary" href="/quiz/create">New exam event</a>
+                        </div>
                         <div class="col-10">
                             <h4>Current Exam</h4>
                             <table class="table table-hover">
@@ -132,13 +143,14 @@
                                 </table>
                             </div>
                         @endif
-                        {{--  <button class="btn btn-primary" data-toggle="modal" data-target="#NewQuizEventModal">New exam event</button>  --}}
-                        <a class="btn btn-primary" href="/quiz/create">New exam event</a>
                     </div>
 
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="my-classes" role="tabpanel" aria-labelledby="my-classes"><!-- Manage Class -->
                         <!-- Fetch instructor's subjects -->
                         <h1>My Classes</h1>
+                        <div class="col-md-12 bg-white text-right">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#NewClassModal">New class</button>
+                        </div>
                         <div class="row">
                             <!-- Class entry -->
                             @foreach ($classes as $classe)
@@ -153,16 +165,12 @@
                                     </div>
                                 </div>
                             @endforeach
-                            
                         </div>
-                        <div class="col">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#NewClassModal">New class</button>
-                        </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings">
-                        <h3>Advanced Settings</h3>
+                        <center class="mt-5">
+                            <h3>Advanced Settings</h3>
                             <div class="cards" style="width: 40rem;">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
@@ -172,6 +180,8 @@
                                     </li>
                                 </ul>
                             </div>
+                        </center>
+                   
                     </div>
 
                 </div>

@@ -36,6 +36,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- /Page Header -->
                 <div class="row">
                     <div class="col-md-8">
@@ -113,6 +114,8 @@
             </div>
             <!-- /Page Content -->
             <!-- Apply Job Modal -->
+            
+            @csrf
             <div class="modal custom-modal fade" id="apply_job" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -123,23 +126,26 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                        <form action="/applyjob" method="POST">
+                        {{ csrf_field() }}
                                 <div class="form-group">
                                     <label>Name</label>
-                                    <input class="form-control" type="text">
+                                    <input class="form-control" type="text" name="name">
+
                                 </div>
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="form-control" type="text">
+                                    <input class="form-control" type="text" name="email">
+
                                 </div>
                                 <div class="form-group">
                                     <label>Message</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" name="message"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Upload your CV</label>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="cv_upload" >
+                                        <input type="file" class="custom-file-input" id="cv_upload" name="cv_upload">
                                         <label class="custom-file-label" for="cv_upload" >Choose File</label>
                                     </div>
                                 </div>

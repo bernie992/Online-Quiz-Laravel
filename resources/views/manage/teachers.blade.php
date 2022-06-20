@@ -7,7 +7,7 @@
     }
 </style>
 <div class="container">
-    <h1>Teachers</h1>
+    <h1>Employee</h1>
     <div class="row">
         <div class="col-9">
             <table class="table table-hover">

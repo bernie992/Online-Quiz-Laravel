@@ -24,6 +24,8 @@ Route::resource('quiz', 'QuizEventController', ['only' => [//Quiz Events
     'create', 'store', 'show', 'update'
 ]]); 
 
+Route::get('quiz/{id}', 'QuizEventController@display'); 
+
 Route::resource('take', 'TakeQuizController', ['only' => [//Related to taking of quiz
     'store', 'show'
 ]]); 
@@ -64,6 +66,7 @@ Route::post('join', 'QuizController@JoinClass');
 Route::get('jobview', 'JobController@jobview');
 Route::post('applyjob', 'LandingController@applyjob');
 Route::get('application_list', 'LandingController@applicantlist');
+
 // Route::post('/test', function (){//Debugging purposes only
 //     return $_POST;
 // });

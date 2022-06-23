@@ -78,6 +78,7 @@
                             echo (number_format($ave, 2) * 100) . "%";
                         @endphp
                         </td>
+                       
                     </tr>
                     @endforeach
                 </tbody>
@@ -86,7 +87,7 @@
         </div>
         
     </div>
-
+                    
 
 </section>
 

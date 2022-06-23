@@ -90,8 +90,17 @@ color: orange;
                                     <a class="card-footer  clearfix small z-1 align-left" href="/subjects">View category</a>
                                 </div>
                             </div>
+                            <div class="col-lg-3 col-sm-12 pb-3">
+                            <div class="card text-white bg-info">
+                                <div class="card-body">
+                                    <h1 class="align-left display-4">0</h1>
+                                    <p class="lead align-left">Career's</p>
+                                </div>
+                                    <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="">Manage Career's</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div> @include('manage.career')
                     <div class="tab-pane fade {{ $classes->count() == 0 ? '' : '' }}" id="quiz-events" role="tabpanel" aria-labelledby="quiz-events">
                         <h1 class="text-left">Exam Events</h1>
                         <div class="col-md-12 bg-white text-right">

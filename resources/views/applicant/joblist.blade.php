@@ -35,7 +35,6 @@
                                     <a class="btn btn-outline-warning" href=" / "> Back</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

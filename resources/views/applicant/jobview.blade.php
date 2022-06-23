@@ -150,12 +150,20 @@
                                     <label>Contact</label>
                                     <textarea class="form-control" name="message"></textarea>
                                 </div>
-                                <div class="form-group ">
-                                    <label>Upload your CV</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="cv_upload" name="cv_upload">
-                                        <label class="custom-file-label" for="cv_upload" ></label>
-                                    </div>
+                                <div class="panel-body">
+
+                                <div class="form-group{{ $errors->has('cv_upload') ? ' has-error' : '' }}">
+                                    <center>
+                                        <div class="col-md-15">
+                                            <input id="cv_upload" type="file" class="form-control" name="cv_upload" required>
+                                
+                                            @if ($errors->has('cv_upload'))
+                                                <span class="help-block">
+                                                <strong>{{ $errors->first('cv_upload') }}</strong>
+                                            </span>
+                                            @endif
+                                        </div>
+                                    </center>
                                 </div>
                                 <div class="submit-section">
                                     <button class="btn submit-btn">Submit</button>

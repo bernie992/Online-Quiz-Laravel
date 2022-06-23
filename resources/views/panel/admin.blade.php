@@ -100,7 +100,7 @@
                 </thead>
                 <tbody>
                     @foreach($quiz_events as $qe)
-                        <tr scope="row">{{ $qe->quiz_event_id }}>
+                        <tr id="quiz-entry{{ $qe->quiz_event_id }}">
                             <td>{{ $qe->quiz_event_name }}</td>
                             <td>{{ $qe->classe->subject->subject_desc }}</td>
                             <td>

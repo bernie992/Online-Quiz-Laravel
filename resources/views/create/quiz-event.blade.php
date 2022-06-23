@@ -16,7 +16,7 @@
                 <input name="q_name" type="text" class="form-control" required autofocus>
             </div>
             <div class="form-group">
-                <label for="">Class</label>
+                <label for="">Deparment</label>
                 <select name="class_id" id="class_id" class="form-control">
                     @foreach ($classes as $classe)
                     <option value="{{ $classe->class_id }}">{{ $classe->subject->subject_desc }} ({{ $classe->course_sec }})</option>

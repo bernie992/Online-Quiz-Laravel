@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class JobController extends Controller
+class CareerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,6 @@ class JobController extends Controller
     public function index()
     {
         //
-        return view('applicant.joblist');
     }
 
     /**
@@ -25,6 +24,7 @@ class JobController extends Controller
     public function create()
     {
         //
+        return view('manage.career');
     }
 
     /**
@@ -36,7 +36,7 @@ class JobController extends Controller
     public function store(Request $request)
     {
         //
-        return('admin.t_job');
+        
     }
 
     /**
@@ -82,9 +82,5 @@ class JobController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function jobview(){
-        return view('applicant.jobview');
     }
 }

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.apps')
 
 @section('title', 'An Online Applicant Exam Management System')
 @section('content')
@@ -27,7 +27,7 @@
             }
         </style>
         
-        <div class="jumbotron">
+        <div class="jumbotron" style="background-color: orangered;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 text-left mr-auto">

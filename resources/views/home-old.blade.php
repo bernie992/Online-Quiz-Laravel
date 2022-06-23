@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.apps')
 
 @section('title', 'An Online Applicant Exam Management System')
 @section('content')

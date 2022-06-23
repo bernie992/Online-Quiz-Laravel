@@ -1,4 +1,4 @@
-@extends('layouts.apps')
+@extends('layouts.app')
 @section('title', 'Quiz Dashboard')
 @section('content')
 <style>

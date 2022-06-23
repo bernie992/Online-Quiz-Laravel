@@ -15,24 +15,32 @@
     transition: all 0.3s ease 0s;
     }
 .job-list-det:hover {
-	background-color: #f43b48;
+	background-color: orangered;
 	color: red;
 }
-    
+.btn{
+    color: black;
+    border: solid 1px red;
+}
+.btn:hover{
+    color: white;
+    background-color: orangered;
+}
 </style>
         <!-- Page Wrapper -->
-        <div class="page-wrapper job-wrapper" style="background-color: Silver;">
+        <div class="page-wrapper job-wrapper" style="background-color: orange;">
             <!-- Page Content -->
-            <div class="content container" style="background-color: Silver;">
+            <div class="content container">
                 <!-- Page Header -->
                 <div class="page-header">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h3 class="page-title">Jobs</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Jobs</li>
-                            </ul>
+                    <div class="row ">
+                    <div class="col-sm-12">
+                            <h3 class="page-title text-center">Be Part Our Team</h3>
+                            <h5 class="page-title text-center">Stable yourself with your abilities.</h5>
+                            <div class="btn-job m-2">
+                                <a class="btn btn-outline-warning" href=" / "> Home</a>
+                                <a class="btn btn-outline-warning float-right" href=" /joblist "> Back</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -139,18 +147,18 @@
 
                                 </div>
                                 <div class="form-group">
-                                    <label>Message</label>
+                                    <label>Contact</label>
                                     <textarea class="form-control" name="message"></textarea>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group ">
                                     <label>Upload your CV</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="cv_upload" name="cv_upload">
-                                        <label class="custom-file-label" for="cv_upload" >Choose File</label>
+                                        <label class="custom-file-label" for="cv_upload" ></label>
                                     </div>
                                 </div>
                                 <div class="submit-section">
-                                    <button class="btn btn-primary submit-btn">Submit</button>
+                                    <button class="btn submit-btn">Submit</button>
                                 </div>
                             </form>
                         </div>

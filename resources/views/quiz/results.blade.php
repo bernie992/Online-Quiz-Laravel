@@ -45,5 +45,27 @@
             This is a computer generated report. 
         </p>
         <a href="/panel">Go back to home</a>
-    </div>
+    
+    <table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Questions</th>
+      <th scope="col">Correct Answer</th>
+      <th scope="col">Answers</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach($viewrecord as $answer)
+    <tr>
+      <th scope="row"></th>
+      <td>{{$answer->question_name}}</td>
+      <td>{{$answer->answer}}</td>
+      <td>{{$answer->student_answer}}</td>
+     
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+</div>
 </body>

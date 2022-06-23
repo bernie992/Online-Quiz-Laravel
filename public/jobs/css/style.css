@@ -2381,6 +2381,10 @@ table.dataTable thead > tr > td.sorting {
     font-weight: 600;
     min-width: 200px;
     padding: 10px 20px;
+	background-color: orange;
+}
+.submit-btn:hover{
+	background-color: orangered;
 }
 .form-scroll {
     max-height: 400px;
@@ -5739,7 +5743,7 @@ table.table-inbox tbody tr.checked {
 	font-size: 13px;
 }
 .job-btn {
-    border: 2px solid #f43b48;
+    border: 2px solid orangered;
     color: #f43b48;
     display: block;
     font-size: 16px;
@@ -5750,7 +5754,7 @@ table.table-inbox tbody tr.checked {
     transition: all 0.3s ease 0s;
 }
 .job-btn:hover {
-	background-color: #f43b48;
+	background-color: orangered;
 	color: #fff;
 }
 .job-widget {

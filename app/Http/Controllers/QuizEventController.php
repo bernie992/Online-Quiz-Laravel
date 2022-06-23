@@ -8,6 +8,8 @@ use App\Questionnaire;
 use App\Question;
 use App\QuizEvent;
 use App\StudentScore;
+use App\StudentAnswer;
+use DB;
 
 use Auth;
 
@@ -100,6 +102,9 @@ class QuizEventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function display($id){
+        
+    }
     public function show($id){
         if(Auth::user()->permissions < 2){
             $usr_id = Auth::user()->usr_id;
@@ -121,17 +126,39 @@ class QuizEventController extends Controller
 
             $qtn_id = QuizEvent::find($id)->questionnaire_id;
             $sum = Question::where('questionnaire_id', $qtn_id)->sum('points');
+            $record = StudentAnswer::all();
+            
 
-            return view('manage.quiz', compact('quiz_details', 'results', 'sum'));
+            return view('manage.quiz', compact('quiz_details', 'results', 'sum', 'record'));
         }else{
             $results = StudentScore::with('quiz_event', 'user_profile')
                         ->where('student_id', Auth::user()->usr_id)
                         ->first();
+              
+            //  dd($results->student_id);
+            $checks = Question::where('questionnaire_id', $results->quiz_event_id)->get();
+            // dd($checks);
+           
 
             $qtn_id = QuizEvent::find($id)->questionnaire_id;
+             
             $sum = Question::where('questionnaire_id', $qtn_id)->sum('points');
+            
+            
+            $viewrecord = DB::table('users')
+                        ->join('quiz_student_answers', 'users.usr_id','=','quiz_student_answers.student_id')
+                        ->join('questions', 'questions.question_id','=','quiz_student_answers.question_id')
+                        ->join('quiz_events', 'quiz_events.quiz_event_id','=','quiz_student_answers.quiz_event_id')
+                        // ->where('users.usr_id','=', $results->student_id)
+                        ->where('quiz_events.quiz_event_id','=', $results->student_id)
+                        ->select('users.usr','questions.question_name','questions.answer','quiz_student_answers.student_answer','quiz_events.quiz_event_name')
+                        ->get();
+                        // dd($viewrecord);
 
-            return view('quiz.results', compact('results', 'sum'));
+
+          
+            return view('quiz.results', compact('results', 'sum', 'checks','viewrecord'));
+           
         }
         
     }
@@ -149,4 +176,6 @@ class QuizEventController extends Controller
         $quiz->save();
         //return "ID: $id" . "\n" . $request->input('quiz_status');
     }
+   
+   
 }

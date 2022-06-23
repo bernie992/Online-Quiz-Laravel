@@ -34,13 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav col-md-10">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/panel">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About us</a>
-                    </li>
-                    <li>
-                        <a href="/landingpage" class="nav-link">Job Hiring</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Report a bug</a>
@@ -62,7 +59,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <h6 class="dropdown-header">Signed in as: <b>{{ Auth::user()->usr }}</b></h6>
-                                <a class="dropdown-item" href="/panel">User Panel</a>
+                                <!-- <a class="dropdown-item" href="/panel">User Panel</a> -->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Logout

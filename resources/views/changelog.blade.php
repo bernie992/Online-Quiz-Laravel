@@ -1,4 +1,4 @@
-@extends('layouts.app') @section('title', 'Changelog') @section('content')
+@extends('layouts.apps') @section('title', 'Changelog') @section('content')
 <style>
     body {
         padding-top: 90px;

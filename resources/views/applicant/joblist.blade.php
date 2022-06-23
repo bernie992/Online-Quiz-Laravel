@@ -2,25 +2,40 @@
 
 @section('title', 'An Online Applicant Exam Management System')
 @section('content')
-<style> 
-  
-.job-list-det:hover {
-	background-color: aquamarine;
+<style>
+.job-type-info:hover {
+	background-color: orange;
+}
+.job-types:hover{
+    color:white;
+}
+.btn{
+    color: black;
+}
+.btn:hover{
+    color: white;
 }
     
 </style>
         <!-- Page Wrapper -->
-        <div class="page-wrapper job-wrapper">
+        <div class="page-wrapper job-wrapper" style="background-color: orangered;">
             <!-- Page Content -->
-            <div class="content container" style="background-color: Silver;">
+            <div class="content container">
                 <!-- Page Header -->
                 <div class="page-header">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="page-title">Jobs</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="">Dashboard</a></li>
-                            </ul>
+                            <h3 class="page-title text-center">Be Part Our Team</h3>
+                            <h5 class="page-title text-center">Stable yourself with your abilities.</h5>
+                            <div class="btn-jobs ">
+                                <div class="btn-job float-left">
+                                    <a class="btn btn-outline-warning" href=" / "> Home</a>
+                                </div>
+                                <div class="btn-job float-right">
+                                    <a class="btn btn-outline-warning" href=" / "> Back</a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

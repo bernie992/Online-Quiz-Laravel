@@ -64,6 +64,7 @@ Route::post('join', 'QuizController@JoinClass');
 Route::get('jobview', 'JobController@jobview');
 Route::post('applyjob', 'LandingController@applyjob');
 Route::get('application_list', 'LandingController@applicantlist');
+Route::get('career', 'CareerController@index');
 // Route::post('/test', function (){//Debugging purposes only
 //     return $_POST;
 // });

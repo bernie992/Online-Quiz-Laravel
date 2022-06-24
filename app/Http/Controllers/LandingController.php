@@ -36,7 +36,7 @@ class LandingController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**

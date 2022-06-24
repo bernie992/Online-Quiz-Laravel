@@ -15,28 +15,28 @@
     transition: all 0.3s ease 0s;
     }
 .job-list-det:hover {
-	background-color: orangered;
+	background-color: orange;
 	color: red;
 }
 .btn{
     color: black;
-    border: solid 1px red;
+    border: solid 1px orange;
 }
 .btn:hover{
     color: white;
-    background-color: orangered;
+    background-color: orange;
 }
 </style>
         <!-- Page Wrapper -->
-        <div class="page-wrapper job-wrapper" style="background-color: orange;">
+        <div class="page-wrapper job-wrapper" style="background-color: orangered;">
             <!-- Page Content -->
             <div class="content container">
                 <!-- Page Header -->
                 <div class="page-header">
                     <div class="row ">
                     <div class="col-sm-12">
-                            <h3 class="page-title text-center">Be Part Our Team</h3>
-                            <h5 class="page-title text-center">Stable yourself with your abilities.</h5>
+                            <h3 class="page-title text-center">Be Part of Our Amazing Team!</h3>
+                            <h5 class="page-title text-center">Stable your self with your abilities.</h5>
                             <div class="btn-job m-2">
                                 <a class="btn btn-outline-warning" href=" / "> Home</a>
                                 <a class="btn btn-outline-warning float-right" href=" /joblist "> Back</a>
@@ -126,7 +126,7 @@
             @csrf
             <div class="modal custom-modal fade" id="apply_job" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" style="background-color:orangered; color: orange;">
                         <div class="modal-header">
                             <h5 class="modal-title">Add Your Details</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -138,32 +138,31 @@
                         {{ csrf_field() }}
                                 <div class="form-group">
                                     <label>Name</label>
-                                    <input class="form-control" type="text" name="name">
+                                    <input class="form-control text-white" type="text" name="name" style="background-color:orange; border: solid 1px orange;" placeholder="Input Name...">
 
                                 </div>
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="form-control" type="text" name="email">
+                                    <input class="form-control text-white" type="text" name="email" style="background-color:orange; border: solid 1px orange;" placeholder="Input Email...">
 
                                 </div>
                                 <div class="form-group">
                                     <label>Contact</label>
-                                    <textarea class="form-control" name="message"></textarea>
+                                    <input class="form-control text-white" name="message" style="background-color:orange; border: solid 1px orange;" placeholder="Input Contant..">
                                 </div>
                                 <div class="panel-body">
 
                                 <div class="form-group{{ $errors->has('cv_upload') ? ' has-error' : '' }}">
-                                    <center>
-                                        <div class="col-md-15">
-                                            <input id="cv_upload" type="file" class="form-control" name="cv_upload" required>
-                                
-                                            @if ($errors->has('cv_upload'))
-                                                <span class="help-block">
-                                                <strong>{{ $errors->first('cv_upload') }}</strong>
-                                            </span>
-                                            @endif
-                                        </div>
-                                    </center>
+                                    <label>Input your CV here!</label>
+                                    <div class="col-md-15">
+                                        <input id="cv_upload" type="file" class="form-control text-white" name="cv_upload" style="background-color:orange; border: solid 1px orange;" required>
+                            
+                                        @if ($errors->has('cv_upload'))
+                                            <span class="help-block">
+                                            <strong>{{ $errors->first('cv_upload') }}</strong>
+                                        </span>
+                                        @endif
+                                    </div>
                                 </div>
                                 <div class="submit-section">
                                     <button class="btn submit-btn">Submit</button>

@@ -13,11 +13,11 @@
         <form action="" method="post">
           <div class="form-group d-flex">
             <label for="name" class="mt-1 p-0 col-md-3">Job Title :</label>
-            <input type="name" class="form-control col-md-8" id="name" placeholder="Input Job Title">
+            <input type="name" class="form-control col-md-8" id="job_title" placeholder="Input Job Title">
           </div>
           <div class="form-group d-flex">
             <label for="disc" class="mt-1 p-0 col-md-3">Description :</label>
-            <textarea type="textarea" class="form-control col-md-8" id="disc" rows="10" placeholder="Input Description"></textarea>
+            <textarea type="textarea" class="form-control col-md-8" id="disc" rows="10" placeholder="Input Description" name="description"></textarea>
           </div>
         </form>
       </div>

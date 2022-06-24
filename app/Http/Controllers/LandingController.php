@@ -36,7 +36,7 @@ class LandingController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
@@ -94,7 +94,7 @@ class LandingController extends Controller
 
         $landing -> save(); 
 
-        return redirect('/landingpage');
+        return redirect()->back();
     }
 
     public function applicantlist()

@@ -25,8 +25,8 @@
                 <div class="page-header">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="page-title text-center">Be Part Our Team</h3>
-                            <h5 class="page-title text-center">Stable yourself with your abilities.</h5>
+                            <h3 class="page-title text-center">Be Part of Our Amazing Team</h3>
+                            <h5 class="page-title text-center">Stable your self with your abilities.</h5>
                             <div class="btn-jobs ">
                                 <div class="btn-job float-left">
                                     <a class="btn btn-outline-warning" href=" / "> Home</a>

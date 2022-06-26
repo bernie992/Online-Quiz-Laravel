@@ -54,7 +54,7 @@
                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
                         <p class="lead align-left">Department</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects">View category</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects" style="text-decoration: none;">View category</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-12 pb-3">
@@ -63,7 +63,7 @@
                         <h1 class="align-left display-4">{{ $teachers }}</h1>
                         <p class="lead align-left">HR</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" href="/teachers">View HR</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" href="/teachers" style="text-decoration: none;">View HR</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-12 pb-3">
@@ -72,7 +72,7 @@
                         <h1 class="align-left display-4">{{ $applicant}}</h1>
                         <p class="lead align-left">Applicant</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" href="/application_list">View Applicant</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" href="/application_list" style="text-decoration: none;">View Applicant</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-12 pb-3">
@@ -81,7 +81,7 @@
                         <h1 class="align-left display-4">0</h1>
                         <p class="lead align-left">Career's</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="">Manage Career's</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="" style="text-decoration: none;">Manage Career's</a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
         <div class="col-10">
             <h4>Current Exams</h4>
             <table class="table table-hover">
-                <thead class="text-center">
+                <thead>
                     <tr>
                         <th>Topic</th>
                         <th>Deparment</th>
@@ -104,7 +104,7 @@
                             <td>{{ $qe->quiz_event_name }}</td>
                             <td>{{ $qe->classe->subject->subject_desc }}</td>
                             <td>
-                                <a href="/quiz/{{ $qe->quiz_event_id }}" class="btn btn-outline-primary">Manage</a>
+                                <a href="/quiz/{{ $qe->quiz_event_id }}" class="btn btn-outline-primary">View</a>
                             </td>
                         </tr>
                     @endforeach

@@ -8,9 +8,9 @@
 </style>
 <section class="container">
     <h1>Manage Exam</h1>
+    <button class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#createQuestion"><span class="fa fa-plus"></span> Add new question</button><br>
     <b>
         <p>{{ $q->questionnaire_name }}</p>
-        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createQuestion" style="margin-left: 87%"><span class="fa fa-plus"></span> Add new question</button>
     </b>
     <hr>
 
@@ -217,7 +217,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" onclick="AddQuestion()" class="btn btn-primary">Save changes</button>
+                <button type="button" onclick="AddQuestion()" class="btn btn-outline-success">Save</button>
             </div>
         </div>
     </div>

@@ -6,6 +6,31 @@
         padding-top: 70px;
     }
 </style>
+<main>
+<div class="container-fluid">
+<div class="row">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" id="v-pills-dashboard" data-toggle="pill" href="/panel/admin" role="tab" aria-controls="v-pills-dashboard"
+                aria-expanded="true">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
+                aria-expanded="true">Exam Events</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#classes" role="tab" aria-controls="v-pills-profile"
+                aria-expanded="true">Classes</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
+                aria-expanded="true">Settings</a>
+        </li>
+    </ul>
+</nav>
+
+<main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 <div class="container">
     <h1>Employee</h1>
     <div class="row">
@@ -46,17 +71,17 @@
             </table>
         </div>
         <div class="col-3">
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject">Add new HR</button>
+            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject"><span class="fa fa-plus"></span> Add new HR</button>
         </div>
 
     </div>
-
+    </main>
     <!-- Add Teacher Modal -->
     <div class="modal fade" id="addSubject" tabindex="-1" role="dialog" aria-labelledby="AddSubjectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add HR</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">HR</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -83,7 +108,7 @@
                             <small class="form-text text-muted">At least 8 characters</small>
                         </div>
                         <div class="form-group">
-                            <button type="submit" onclick="" class="btn btn-success btn-block">Register</button>
+                            <button type="submit" onclick="" class="btn btn-outline-success btn-block col-md-3">Register</button>
                             <small class="form-text text-muted text-center">By clicking "Register", the HR agree to our terms of service and privacy policy.</small>
                         </div>
                         <input type="hidden" name="permission" id="permission" value="1">
@@ -160,6 +185,7 @@
         </div>
     </div>
 </div>
+</main>
 <script>
     $.ajaxSetup({
         headers: {

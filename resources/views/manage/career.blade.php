@@ -22,7 +22,7 @@
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title text-center">Career's</h4>
-          <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal"><span class = "fa fa-plus"></span> Job Title</button>
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal"><span class = "fa fa-plus"></span> Job Title</button>
         </div>
         
         <!-- Modal body -->
@@ -31,14 +31,26 @@
                 <table class="table table-striped table-hover" cellspacing="0" width="100%">
                     <thead>
                         <tr>
-                            <th>Id</th>
+                            <th>#</th>
                             <th>Job Title</th>
-                            <th>Description</th>
-                            <th>Status</th>
+                            <th>Post Date</th>
+                            <th>End Date</th>
+                            <th>Vacant</th>
                             <th class="none"></th>
                         </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <a href="" class="btn btn-outline-primary">Edit</a>
+                          <a href="" class="btn btn-outline-danger">Delete</a>
+                        </td>
+                      </tr>
                     </tbody>
                 </table>
             </div>

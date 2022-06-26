@@ -8,29 +8,10 @@
 
     .card-footer{
         font-size: 18px;
+        color: white;
     }
-    .card-footer:link {
-color: white;
-}
-
-/* When it is visited link */
-.card-footer:visited {
-color: white;
-}
-
-/* When you mouse over link */
-.card-footer:hover {
-color: orange;
-}
-
-/* When it is selected link */
-.card-footer:active {
-color: orange;
-}
-
-
     .card {
-        padding: 5px;
+        padding: 0;
         transition: transform .2s;
         width: 200px;
         height: 200px;
@@ -41,7 +22,6 @@ color: orange;
     .card:hover {
         transform: scale(1.1);
         }
-
 </style>
 <main>
     <div class="container-fluid">
@@ -73,30 +53,30 @@ color: orange;
                         <h1 class="align-left">Dashboard</h1><hr>
                         <div class="row">
                             <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-primary">
+                                <div class="card text-white bg-warning">
                                     <div class="card-body">
                                         <h1 class="align-left display-4">{{ $applicant}}</h1>
                                         <p class="lead align-left">Applicant</p>
                                     </div>
-                                    <a class="card-footer clearfix small z-1 align-left" href="/application_list">View Applicant</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="/application_list" style="color: orangered; text-decoration: none;">View Applicant</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
-                                <div class="card text-white bg-success">
+                                <div class="card text-white bg-warning">
                                     <div class="card-body">
                                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
                                         <p class="lead align-left">Category</p>
                                     </div>
-                                    <a class="card-footer  clearfix small z-1 align-left" href="/subjects">View category</a>
+                                    <a class="card-footer clearfix small z-1 align-left" href="/subjects" style="color: orangered;text-decoration: none;">View category</a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-12 pb-3">
-                            <div class="card text-white bg-info">
+                            <div class="card text-white bg-warning">
                                 <div class="card-body">
                                     <h1 class="align-left display-4">0</h1>
                                     <p class="lead align-left">Career's</p>
                                 </div>
-                                    <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="">Manage Career's</a>
+                                    <a class="card-footer clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="" style="text-decoration: none; color: orangered">Manage Career's</a>
                                 </div>
                             </div>
                         </div>
@@ -164,13 +144,13 @@ color: orange;
                             <!-- Class entry -->
                             @foreach ($classes as $classe)
                                 <div class="col-xl-3 col-sm-6 mb-3">
-                                    <div class="card">
+                                    <div class="card bg-warning">
                                         <div class="card-body">
                                             <h4 class="card-title">{{ $classe->subject->subject_code }}: {{ $classe->subject->subject_desc }}</h4>
                                             <h6 class="card-subtitle mb-2 text-muted">{{ $classe->course_sec }}</h6>
                                             <h3 class="text-center">{{ $classe->class_id }}</h3>
                                         </div>
-                                        <a href="/class/{{ $classe->class_id }}" class="card-footer text-center">View Class</a>
+                                        <a href="/class/{{ $classe->class_id }}" class="card-footer text-center clearfix small z-1" style="text-decoration: none; color: orangered">View Class</a>
                                     </div>
                                 </div>
                             @endforeach

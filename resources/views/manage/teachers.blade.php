@@ -7,31 +7,6 @@
     }
     
 </style>
-<main>
-<div class="container-fluid">
-<div class="row">
-<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-dark sidebar">
-    <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-            <a class="nav-link active" id="v-pills-dashboard" data-toggle="pill" href="/panel/admin" role="tab" aria-controls="v-pills-dashboard"
-                aria-expanded="true">Dashboard</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
-                aria-expanded="true">Exam Events</a>
-        </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#classes" role="tab" aria-controls="v-pills-profile"
-                aria-expanded="true">Classes</a>
-        </li> -->
-        <li class="nav-item">
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
-                aria-expanded="true">Settings</a>
-        </li>
-    </ul>
-</nav>
-
-<main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 <div class="container">
     <h1>Employee</h1>
     <div class="row">
@@ -76,7 +51,6 @@
         </div>
 
     </div>
-    </main>
     <!-- Add Teacher Modal -->
     <div class="modal fade" id="addSubject" tabindex="-1" role="dialog" aria-labelledby="AddSubjectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -186,7 +160,6 @@
         </div>
     </div>
 </div>
-</main>
 <script>
     $.ajaxSetup({
         headers: {

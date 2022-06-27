@@ -6,53 +6,6 @@
         padding-top: 70px;
     }
 </style>
-<main>
-<div class="container-fluid">
-<div class="row">
-<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-dark sidebar">
-    <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-            <a class="nav-link active" id="v-pills-dashboard" data-toggle="pill" href="/panel/admin" role="tab" aria-controls="v-pills-dashboard"
-                aria-expanded="true">Dashboard</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
-                aria-expanded="true">Exam Events</a>
-        </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#classes" role="tab" aria-controls="v-pills-profile"
-                aria-expanded="true">Classes</a>
-        </li> -->
-        <li class="nav-item">
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
-                aria-expanded="true">Settings</a>
-        </li>
-    </ul>
-</nav>
-
-<main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-            <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" id="v-pills-class" data-toggle="pill" href="#class-tab" role="tab" aria-controls="v-pills-class"
-                        aria-expanded="true">Deparment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" 
-                    aria-expanded="true">Exams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="v-pills-students" data-toggle="pill" href="#students-tab" role="tab" aria-controls="v-pills-students"
-                        aria-expanded="true">Applicant</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="v-pills-settings" data-toggle="pill" href="#settings-tab" role="tab" aria-controls="v-pills-settings"
-                        aria-expanded="true">Settings</a>
-                </li>
-            </ul>
-        </nav>
 
         <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
             <h3>{{ $quiz_class->subject->subject_code }}: {{ $quiz_class->subject->subject_desc }}</h3>
@@ -171,7 +124,6 @@
         </main>
     </div>
 </div>
-</main>
 <!-- Reset Student password Success Modal -->
 <div class="modal fade" id="resetStudentPasswordSuccess" tabindex="-1" role="dialog" aria-labelledby="resetStudentPasswordSuccess"
     aria-hidden="true">
@@ -272,7 +224,6 @@
         </div>
     </div>
 </div>
-</main>
 <script>
     $.ajaxSetup({
         headers: {

@@ -46,34 +46,25 @@
                 </div>
 
                 <!-- /Page Header -->
+
                 <div class="row">
                     <div class="col-md-8">
                         <div class="job-info job-widget">
-                            <h3 class="job-title">Android Developer</h3>
-                            <span class="job-dept">App Development</span>
+                            <h3 class="job-title">{{$jobshow->job_title}}
+                            </h3>
+                      
                             <ul class="job-post-det">
-                                <li><i class="fa fa-calendar"></i> Post Date: <span class="text-blue">Feb 18, 2019</span></li>
-                                <li><i class="fa fa-calendar"></i> Last Date: <span class="text-blue">May 31, 2019</span></li>
-                                <li><i class="fa fa-user-o"></i> Applications: <span class="text-blue">4</span></li>
-                                <li><i class="fa fa-eye"></i> Views: <span class="text-blue">3806</span></li>
+                                <li><i class="fa fa-calendar"></i> Post Date: <span class="text-blue">{{$jobshow->post_date}}</span></li>
+                                <li><i class="fa fa-calendar"></i> Last Date: <span class="text-blue">{{$jobshow->last_date}}</span></li>
+                                
                             </ul>
                         </div>
                         <div class="job-content job-widget">
                             <div class="job-desc-title"><h4>Job Description</h4></div>
                             <div class="job-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <p>{{$jobshow->job_description}}</p>
                             </div>
-                            <div class="job-desc-title"><h4>Job Description</h4></div>
-                            <div class="job-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                                <ul class="square-list">
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -84,28 +75,21 @@
                                 <h5>Job Type</h5>
                                 <p> Full Time</p>
                             </div>
-                            <div class="info-list">
-                                <span><i class="fa fa-money"></i></span>
-                                <h5>Salary</h5>
-                                <p>$32k - $38k</p>
-                            </div>
+                           
                             <div class="info-list">
                                 <span><i class="fa fa-suitcase"></i></span>
                                 <h5>Experience</h5>
-                                <p>2 Years</p>
+                                <p>{{$jobshow->experience}}</p>
                             </div>
                             <div class="info-list">
                                 <span><i class="fa fa-ticket"></i></span>
                                 <h5>Vacancy</h5>
-                                <p>5</p>
+                                <p>{{$jobshow->vacancy}}</p>
                             </div>
                             <div class="info-list">
                                 <span><i class="fa fa-map-signs"></i></span>
                                 <h5>Location</h5>
-                                <p> Dreamguy's Technologies
-                                <br> 3864 Quiet Valley Lane,
-                                <br> Sherman Oaks,
-                                <br> California, 91403</p>
+                                <p> {{$jobshow->location}}</p>
                             </div>
                             <div class="info-list">
                                 <p> 818-978-7102
@@ -113,9 +97,7 @@
                                 <br> https://www.example.com
                                 </p>
                             </div>
-                            <div class="info-list text-center">
-                                <a class="app-ends" href="#">Application ends in 2d 7h 6m</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -78,7 +78,7 @@
             <div class="col-lg-3 col-sm-12 pb-3">
                 <div class="card text-white bg-info">
                     <div class="card-body">
-                        <h1 class="align-left display-4">0</h1>
+                        <h1 class="align-left display-4">{{ $jobrecord }}</h1>
                         <p class="lead align-left">Career's</p>
                     </div>
                     <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="" style="text-decoration: none;">Manage Career's</a>

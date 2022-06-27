@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\JobDetail;
 
 class JobController extends Controller
 {
@@ -13,8 +14,8 @@ class JobController extends Controller
      */
     public function index()
     {
-        //
-        return view('applicant.joblist');
+        $jobshow = JobDetail::all();
+        return view('applicant.joblist',compact('jobshow'));
     }
 
     /**
@@ -84,7 +85,9 @@ class JobController extends Controller
         //
     }
 
-    public function jobview(){
-        return view('applicant.jobview');
+    public function jobview($id){
+        $jobshow = JobDetail::where('id',$id)->first();
+        // dd($jobshow);
+        return view('applicant.jobview', compact('jobshow'));
     }
 }

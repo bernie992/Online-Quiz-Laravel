@@ -63,13 +63,14 @@ Route::resource('joblist', 'JobController', ['only' => [//Job
 ]]);
 
 Route::post('join', 'QuizController@JoinClass');
-Route::get('jobview', 'JobController@jobview');
+Route::get('jobview/{id}', 'JobController@jobview');
 Route::post('applyjob', 'LandingController@applyjob');
 Route::get('application_list', 'LandingController@applicantlist');
 
 Route::get('career', 'CareerController@index');
 
-
+Route::post('add details job', 'JobDetailController@storedata');
+Route::get('job show', 'JobDetailController@jobshow');
 
 // Route::post('/test', function (){//Debugging purposes only
 //     return $_POST;

@@ -26,12 +26,13 @@
         </div>
         
         <!-- Modal body -->
+        
         <div class="modal-body">
             <div class="container-fluid py-2">
                 <table class="table table-striped table-hover" cellspacing="0" width="100%">
                     <thead>
                         <tr>
-                            <th>#</th>
+                          
                             <th>Job Title</th>
                             <th>Post Date</th>
                             <th>End Date</th>
@@ -40,17 +41,19 @@
                         </tr>
                     </thead>
                     <tbody>
+                      @foreach($jobshow as $show)
                       <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{$show->job_title}}</td>
+                        <td>{{$show->post_date}}</td>
+                        <td>{{$show->last_date}}</td>
+                        <td>{{$show->vacancy}}</td>
                         <td></td>
                         <td>
                           <a href="" class="btn btn-outline-primary">Edit</a>
                           <a href="" class="btn btn-outline-danger">Delete</a>
                         </td>
                       </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>

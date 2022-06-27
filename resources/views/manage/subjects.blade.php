@@ -9,7 +9,7 @@
 <main>
 <div class="container-fluid">
 <div class="row">
-<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-dark sidebar">
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
             <a class="nav-link active" id="v-pills-dashboard" data-toggle="pill" href="/panel/admin" role="tab" aria-controls="v-pills-dashboard"
@@ -32,7 +32,7 @@
 
 <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 <div class="container">
-    <h1>Department Categories</h1>
+    <h1>Manage Department</h1>
     <div class="row">
         <div class="col-9">
 
@@ -41,7 +41,7 @@
                     <tr>
                         <th>#</th>
                         <th>Department Code</th>
-                        <th>Department Description</th>
+                        <th>Department Name</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -77,7 +77,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Department Category</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Department Exam</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -91,7 +91,7 @@
                             <input id="sub_code" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="">Department</label>
+                            <label for="">Department Name</label>
                             <input id="sub_des" type="text" class="form-control" placeholder="">
                         </div>
                         <input type="hidden" id="sub_id">
@@ -100,7 +100,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="UpdateSubject()">Update Category</button>
+                <button type="button" class="btn btn-primary" onclick="UpdateSubject()">Update Department</button>
             </div>
         </div>
     </div>
@@ -111,7 +111,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Department Category</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add Department Name</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -125,7 +125,7 @@
                             <input id="s_code_new" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="">Department Category</label>
+                            <label for="">Department Name</label>
                             <input id="s_desc_new" type="text" class="form-control" placeholder="">
                         </div>
                     </div>
@@ -133,7 +133,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="AddSubject()"> <span class="fa fa-plus"></span> Add Category</button>
+                <button type="button" class="btn btn-primary" onclick="AddSubject()"> <span class="fa fa-plus"></span> Add Department Name</button>
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                Are you sure you want to delete this Category? This is irreversible!
+                Are you sure you want to delete this Department? This is irreversible!
                 <input type="hidden" id="sub_id_del" value="">
             </div>
             <div class="modal-footer">

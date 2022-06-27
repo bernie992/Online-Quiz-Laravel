@@ -1,27 +1,27 @@
 @extends('layouts.app')
 @section('title', 'Administrator\'s Dashboard')
-@section('content')
 <style>
     main{
         padding-top: 2.5rem;
     }
-    .card {
-        transition: transform .2s;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
+    .card{
         text-align: center;
+    }
+    .card-footer {
+        transition: transform .2s;
+        margin: 0 auto;
         }
 
-    .card:hover {
-        transform: scale(1.1);
+    .card-footer:hover {
+        transform: scale(1.2);
         }
 
 </style>
+@section('content')
 <main>
 <div class="container-fluid">
 <div class="row">
-<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-warning sidebar">
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
             <a class="nav-link active" id="v-pills-dashboard" data-toggle="pill" href="#dashboard" role="tab" aria-controls="v-pills-dashboard"
@@ -41,47 +41,46 @@
         </li>
     </ul>
 </nav>
-
-<main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+<main class="col-sm-9 ml-sm-auto col-md-10" role="main">
     <div class="tab-content container" id="v-pills-tabContent">
     <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard">
         <h1 class="align-left">Dashboard</h1><hr>
         <div class="row">
             
             <div class="col-lg-3 col-sm-12 pb-3">
-                <div class="card text-white bg-secondary">
+                <div class="card text-white bg-primary">
                     <div class="card-body">
                         <h1 class="align-left display-4" >{{ $subjects->count() }}</h1>
                         <p class="lead align-left">Department</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects" style="text-decoration: none;">View category</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" href="/subjects" style="color: orangered; text-decoration: none;">View Department</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 pb-3">
+                <div class="card text-white bg-info">
+                    <div class="card-body">
+                        <h1 class="align-left display-4">{{ $teachers }}</h1>
+                        <p class="lead align-left">HR</p>
+                    </div>
+                    <a class="card-footer text-white clearfix small z-1 align-left" href="/teachers" style="color: orangered; text-decoration: none;">View HR</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-12 pb-3">
                 <div class="card text-white bg-success">
                     <div class="card-body">
-                        <h1 class="align-left display-4">{{ $teachers }}</h1>
-                        <p class="lead align-left">HR</p>
-                    </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" href="/teachers" style="text-decoration: none;">View HR</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-12 pb-3">
-                <div class="card text-white bg-info">
-                    <div class="card-body">
                         <h1 class="align-left display-4">{{ $applicant}}</h1>
                         <p class="lead align-left">Applicant</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" href="/application_list" style="text-decoration: none;">View Applicant</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" href="/application_list" style="color: orangered; text-decoration: none;">View Applicant</a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-12 pb-3">
-                <div class="card text-white bg-info">
+                <div class="card text-white bg-secondary">
                     <div class="card-body">
                         <h1 class="align-left display-4">0</h1>
                         <p class="lead align-left">Career's</p>
                     </div>
-                    <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="" style="text-decoration: none;">Manage Career's</a>
+                    <a class="card-footer text-white clearfix small z-1 align-left" data-toggle="modal" data-target="#myModal" href="" style="color: orangered; text-decoration: none;">Manage Career's</a>
                 </div>
             </div>
         </div>
@@ -118,7 +117,7 @@
                     <thead>
                         <tr>
                             <th>Topic</th>
-                            <th>Category</th>
+                            <th>Department</th>
                             <th>Class</th>
                             <th></th>
                         </tr>
@@ -162,9 +161,9 @@
             <div class="cards col-12" style="max-width: 40rem;">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <a class="btn btn-primary" href="/subjects" style="float: right">Manage Category</a>
-                        <strong>Manage category</strong>
-                        <p>This will allow you to manage category to serve as basis for the classes.</p>
+                        <a class="btn btn-primary" href="/subjects" style="float: right">Manage Department</a>
+                        <strong>Manage department</strong>
+                        <p>This will allow you to manage department to serve as basis for the classes.</p>
                     </li>
                     <li class="list-group-item">
                         <a class="btn btn-primary" href="/teachers" style="float: right">Manage HR</a>

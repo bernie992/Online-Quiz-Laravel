@@ -20,7 +20,7 @@
     <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
 </head>
 
-<body>
+<body class="bg-warning">
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: black;">
             <a class="navbar-brand" href="/">
@@ -36,12 +36,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/panel">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About us</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#">Report a bug</a>
-                    </li>
+                    </li> -->
                 </ul>
 
                 <!-- Login here -->

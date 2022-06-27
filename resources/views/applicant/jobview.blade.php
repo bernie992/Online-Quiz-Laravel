@@ -11,7 +11,7 @@
     font-weight: 600;
     margin-bottom: 20px;
     padding: 15px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     transition: all 0.3s ease 0s;
     }
 .job-list-det:hover {

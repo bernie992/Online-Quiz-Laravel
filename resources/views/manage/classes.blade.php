@@ -6,13 +6,38 @@
         padding-top: 70px;
     }
 </style>
+<main>
+<div class="container-fluid">
+<div class="row">
+<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-dark sidebar">
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" id="v-pills-dashboard" data-toggle="pill" href="/panel/admin" role="tab" aria-controls="v-pills-dashboard"
+                aria-expanded="true">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#quiz-events" role="tab" aria-controls="v-pills-home"
+                aria-expanded="true">Exam Events</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#classes" role="tab" aria-controls="v-pills-profile"
+                aria-expanded="true">Classes</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings"
+                aria-expanded="true">Settings</a>
+        </li>
+    </ul>
+</nav>
+
+<main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 <div class="container-fluid">
     <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" id="v-pills-class" data-toggle="pill" href="#class-tab" role="tab" aria-controls="v-pills-class"
-                        aria-expanded="true">Class</a>
+                        aria-expanded="true">Deparment</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" 
@@ -31,9 +56,6 @@
 
         <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
             <h3>{{ $quiz_class->subject->subject_code }}: {{ $quiz_class->subject->subject_desc }}</h3>
-            <h5>
-                <span class="badge badge-primary">{{ $quiz_class->course_sec }}</span>
-            </h5>
             <hr>
 
             <div class="tab-content col" id="v-pills-tabContent">
@@ -43,7 +65,7 @@
                             <div class="card text-white bg-primary">
                                 <div class="card-body">
                                     <h1 class="align-left display-1">{{ $quiz_class->class_id }}</h1>
-                                    <p class="lead align-left">Class Code</p>
+                                    <p class="lead align-left">Exam Code</p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +74,7 @@
                                 <div class="card-body">
                                     <p class="align-left display-1">{{ $quiz_events->count() }}</p>
                                     <p class="lead align-left"> Exam{{ $quiz_events->count()
-                                        <=1 ? '' : 'zes' }}</p>
+                                        <=1 ? '' : 's' }}</p>
                                 </div>
                                 <a class="card-footer text-white clearfix small z-1 text-center" href="">View Exam</a>
                             </div>
@@ -129,7 +151,7 @@
                     </table>
                 
                     <button class="btn btn-primary" data-toggle="modal" data-target="#AddNewStudentModal" disabled>
-                        Add new applicant
+                       <span class="fa fa-plus"></span> Add new applicant
                     </button>
                 </div>
                 
@@ -138,8 +160,8 @@
                     <div class="card" style="width: 40rem;">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteClass" style="float: right">Delete this class</button>
-                                <strong>Delete this class</strong>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteClass" style="float: right">Delete this Department</button>
+                                <strong>Delete this Department</strong>
                                 <p>Once you delete this class, all exam events that refers to this class will also be deleted.</p>
                             </li>
                         </ul>
@@ -149,6 +171,7 @@
         </main>
     </div>
 </div>
+</main>
 <!-- Reset Student password Success Modal -->
 <div class="modal fade" id="resetStudentPasswordSuccess" tabindex="-1" role="dialog" aria-labelledby="resetStudentPasswordSuccess"
     aria-hidden="true">
@@ -249,6 +272,7 @@
         </div>
     </div>
 </div>
+</main>
 <script>
     $.ajaxSetup({
         headers: {

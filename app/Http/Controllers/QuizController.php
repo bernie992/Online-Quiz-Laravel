@@ -12,6 +12,7 @@ use App\Subject;
 use App\User;
 use App\StudentClass;
 use App\Landing;
+use App\JobDetail;
 
 use Illuminate\Support\Facades\DB;
 
@@ -46,8 +47,10 @@ class QuizController extends Controller
             $teachers = User::where('permissions', 1)->count();
             $students = User::where('permissions', 2)->count();
             $applicant = Landing::all()->count();
+            $jobrecord = JobDetail::all()->count();
+            $jobshow = JobDetail::all();
             return view('panel.admin', 
-            compact('classes', 'quiz_events', 'finished_quiz_events', 'subjects', 'teachers', 'students','applicant'));
+            compact('classes', 'quiz_events', 'finished_quiz_events', 'subjects', 'teachers', 'students','applicant','jobrecord','jobshow'));
         }
         else if (Auth::user()->permissions == 1){//The user is a teacher
             $subjects = Subject::all();
@@ -76,7 +79,9 @@ class QuizController extends Controller
                     ->where('classe', '!=', '');
             
                     $applicant = Landing::all()->count();
-            return view('panel.teacher', compact('classes', 'quiz_events', 'finished_quiz_events', 'subjects', 'applicant'));
+                    $jobrecord = JobDetail::all()->count();
+                    $jobshow = JobDeatail::all();
+            return view('panel.teacher', compact('classes', 'quiz_events', 'finished_quiz_events', 'subjects', 'applicant','jobrecord','jobshow'));
         }
         else if (Auth::user()->permissions == 2){//The user is a student
             $upcoming_quiz = QuizEvent::with([

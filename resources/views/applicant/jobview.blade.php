@@ -20,7 +20,7 @@
 }
 .btn{
     color: black;
-    border: solid 1px orange;
+    border: solid 1px;
 }
 .btn:hover{
     color: white;
@@ -126,7 +126,7 @@
             @csrf
             <div class="modal custom-modal fade" id="apply_job" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content" style="background-color:orangered; color: orange;">
+                    <div class="modal-content" style="background-color:orangered;">
                         <div class="modal-header">
                             <h5 class="modal-title">Add Your Details</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -148,7 +148,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Contact</label>
-                                    <input class="form-control text-white" name="message" style="background-color:orange; border: solid 1px orange;" placeholder="Input Contant..">
+                                    <input class="form-control text-white" name="message" style="background-color:orange; border: solid 1px orange;" placeholder="+63...">
                                 </div>
                                 <div class="panel-body">
 

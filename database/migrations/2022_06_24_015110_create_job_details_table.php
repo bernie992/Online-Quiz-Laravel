@@ -18,10 +18,10 @@ class CreateJobDetailsTable extends Migration
             $table->string('job_title');
             $table->string('post_date');
             $table->string('last_date');
-            $table->string('job_description', 255);
-            $table->string('experience');
+            $table->longtext('job_description');
+            $table->longtext('experience');
             $table->string('vacancy');
-            $table->string('location');
+            $table->longtext('location');
             $table->timestamps();
         });
     }

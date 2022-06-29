@@ -18,7 +18,6 @@ class JobDetailController extends Controller
         $job -> vacancy=$request->vacancy;
         $job -> location=$request->location;
         $job -> save();
-
         return redirect()->back();
     }
 
@@ -28,4 +27,5 @@ class JobDetailController extends Controller
 
         return view('manage.career', compact('jobshow'));
     }
+
 }

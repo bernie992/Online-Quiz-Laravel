@@ -6,8 +6,31 @@
         padding-top: 70px;
     }
 </style>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-dark sidebar">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" id="v-pills-class" data-toggle="pill" href="#class-tab" role="tab" aria-controls="v-pills-class"
+                        aria-expanded="true">Class</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-class" data-toggle="pill" href="#quiz-tab" role="tab" aria-controls="v-pills-quizzes" 
+                    aria-expanded="true">Exams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-students" data-toggle="pill" href="#students-tab" role="tab" aria-controls="v-pills-students"
+                        aria-expanded="true">Applicant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-settings" data-toggle="pill" href="#settings-tab" role="tab" aria-controls="v-pills-settings"
+                        aria-expanded="true">Settings</a>
+                </li>
+            </ul>
+        </nav>
 
-        <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+            <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
             <h3>{{ $quiz_class->subject->subject_code }}: {{ $quiz_class->subject->subject_desc }}</h3>
             <hr>
 
@@ -78,6 +101,9 @@
                 </div>
                 
                 <div class="tab-pane fade" id="students-tab" role="tabpanel" aria-labelledby="students-tab">
+                <button class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#AddNewStudentModal">
+                    <span class="fa fa-plus"></span> Add new applicant
+                </button><br><br>
                     <table class="table table-hover">
                         <thead class="thead">
                             <tr>
@@ -102,10 +128,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#AddNewStudentModal" disabled>
-                       <span class="fa fa-plus"></span> Add new applicant
-                    </button>
                 </div>
                 
                 <div class="tab-pane fade" id="settings-tab" role="tabpanel" aria-labelledby="settings-tab">
@@ -224,6 +246,7 @@
         </div>
     </div>
 </div>
+</main>
 <script>
     $.ajaxSetup({
         headers: {

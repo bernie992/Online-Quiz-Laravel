@@ -140,11 +140,10 @@
                         <div class="row">
                             <!-- Class entry -->
                             @foreach ($classes as $classe)
-                                <div class="col-xl-3 col-sm-4 mb-3">
+                                <div class="col-xl-4 col-sm-4 mb-4">
                                     <div class="card bg-primary">
                                         <div class="card-body">
                                             <h4 class="card-title">{{ $classe->subject->subject_code }}: {{ $classe->subject->subject_desc }}</h4>
-                                            <h6 class="card-subtitle mb-2 text-muted">{{ $classe->course_sec }}</h6>
                                             <h3 class="text-center">{{ $classe->class_id }}</h3>
                                         </div>
                                         <a href="/class/{{ $classe->class_id }}" class="card-footer text-center clearfix small z-1" style="color: white; text-decoration: none;">View Class</a>

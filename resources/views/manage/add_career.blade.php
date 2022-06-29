@@ -14,39 +14,38 @@
         {{ csrf_field() }}
           <div class="form-group d-flex">
             <label for="name" class="mt-1 p-0 col-md-3">Job Title :</label>
-            <input type="name" class="form-control col-md-8" id="job_title" name="title" placeholder="Input Job Title">
+            <input type="name" class="form-control col-md-8" id="job_title" name="title" placeholder="Input Job Title" required>
           </div>
           <div class="form-group d-flex">
             <label for="" class="mt-1 p-0 col-md-3">Post Date</label>
-            <input class="form-control col-md-7 " type="date" id="dt" name="post_date" onchange="postdate();"/>
-            <input class="form-control col-md-7 " type="text" id="ndt"  onclick="mydate();" hidden />
-            <input class="col-1" type="button" Value="Date" onclick="mydate();" />
+            <input class="form-control col-md-7 " type="date" id="dt" name="post_date" onchange="postdate();" required/>
+            <input class="form-control col-md-7 " type="text" id="ndt"  onclick="mydate();" hidden required />
+            <input class="col-1" type="button" Value="Date" onclick="mydate();" required />
           </div>
           <div class="form-group d-flex">
             <label for="" class="mt-1 p-0 col-md-3">End Date</label>
-            <input class="form-control col-md-7 " type="date" id="enddt" name="last_date" onchange="enddate();"/>
-            <input class="form-control col-md-7 " type="text" id="endndt"  onclick="edate();" hidden />
-            <input class="col-1" type="button" Value="Date" onclick="edate();" />
+            <input class="form-control col-md-7 " type="date" id="enddt" name="last_date" onchange="enddate();" required/>
+            <input class="form-control col-md-7 " type="text" id="endndt"  onclick="edate();" hidden  required/>
+            <input class="col-1" type="button" Value="Date" onclick="edate();" required />
           </div>
           <div class="form-group d-flex">
             <label for="disc" class="mt-1 p-0 col-md-3">Description :</label>
-            <input type="textarea" class="form-control col-md-8" name="job_description" placeholder="Input Description">
+            <input type="textarea" class="form-control col-md-8" name="job_description" placeholder="Input Description" required>
           </div>
           <div class="form-group d-flex">
             <label for="exp" class="mt-1 p-0 col-md-3">Experience :</label>
-            <input type="textarea" class="form-control col-md-8" name="experience" placeholder="Input Experience">
+            <input type="textarea" class="form-control col-md-8" name="experience" placeholder="Input Experience" required>
           </div>
           <div class="form-group d-flex">
             <label for="vs" class="mt-1 p-0 col-md-3">Vacancy Status:</label>
-            <input type="textarea" class="form-control col-md-8" name="vacancy" placeholder="Input Vacancy">
+            <input type="textarea" class="form-control col-md-8" name="vacancy" placeholder="Input Vacancy" required>
           </div>
           <div class="form-group d-flex">
             <label for="loc" class="mt-1 p-0 col-md-3">Location :</label>
-            <input type="textarea" class="form-control col-md-8" name="location" placeholder="Input Location">
-
+            <input type="textarea" class="form-control col-md-8" name="location" placeholder="Input Location" required>
           </div>
           <div class="modal-footer">
-        
+        <button class="btn btn-outline-danger">Cancel</button>
         <button class="btn btn-outline-success">Save</button>
       </div>
      

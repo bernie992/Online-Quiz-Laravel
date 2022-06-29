@@ -8,6 +8,9 @@
 </style>
 <div class="container">
     <h1>Manage Department</h1>
+    <div class="col-3 float-right">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addSubject"> <span class="fa fa-plus"></span> Add new Department</button>
+    </div><br><br><br>
     <div class="row">
         <div class="col-9">
 
@@ -41,9 +44,6 @@
                     @endforeach
                 </tbody>
             </table>
-        </div>
-        <div class="col-3">
-            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addSubject"> <span class="fa fa-plus"></span> Add new Department</button>
         </div>
     </div>
 </div>

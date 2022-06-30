@@ -80,7 +80,7 @@ class QuizController extends Controller
             
                     $applicant = Landing::all()->count();
                     $jobrecord = JobDetail::all()->count();
-                    $jobshow = JobDeatail::all();
+                    $jobshow = JobDetail::all();
             return view('panel.teacher', compact('classes', 'quiz_events', 'finished_quiz_events', 'subjects', 'applicant','jobrecord','jobshow'));
         }
         else if (Auth::user()->permissions == 2){//The user is a student

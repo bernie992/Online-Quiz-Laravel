@@ -28,7 +28,7 @@
 }
 </style>
         <!-- Page Wrapper -->
-        <div class="page-wrapper job-wrapper" style="background-color: orangered;">
+        <div class="page-wrapper job-wrapper" style="background-color: #f4f2ed;">
             <!-- Page Content -->
             <div class="content container">
                 <!-- Page Header -->

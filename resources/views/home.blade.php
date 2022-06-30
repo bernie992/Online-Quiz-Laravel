@@ -27,7 +27,7 @@
             }
         </style>
         
-        <div class="jumbotron" style="background-color: orangered;">
+        <div class="jumbotron" style="background-color: #f4f2ed">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 text-left mr-auto">

@@ -20,7 +20,7 @@
     <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
 </head>
 
-<body class="bg-warning">
+<body style="background-color: #f4f2ed;">
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: black;">
             <a class="navbar-brand" href="/">
